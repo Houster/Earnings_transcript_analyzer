@@ -1,0 +1,34 @@
+{
+  "ticker": "MSFT",
+  "company_name": "Microsoft Corporation",
+  "date": "2025-04-30",
+  "year": 2025,
+  "quarter": 3,
+  "industry": "Technology",
+  "management_prepared_remarks_sentiment": 82,
+  "management_responses_sentiment": 75,
+  "management_overall_confidence": 78,
+  "analyst_pushback_level": 35,
+  "forward_guidance_sentiment": 72,
+  "key_themes": [
+    "AI / copilot",
+    "cloud growth",
+    "capex / investment",
+    "supply chain",
+    "margins / efficiency"
+  ],
+  "notable_phrases": [
+    "record quarter driven by continued strength of Microsoft Cloud, which surpassed $42 billion in revenue",
+    "we will be short power",
+    "the real outperformance in Azure this quarter was in our non-AI business"
+  ],
+  "summary": "Microsoft reported a record quarter with strong cloud and AI growth, though management acknowledged data center capacity constraints and emphasized efficiency gains across the AI stack while expressing confidence in sustained demand despite macro uncertainty.",
+  "delta_management_prepared_remarks_sentiment": 4.0,
+  "delta_management_responses_sentiment": 10.0,
+  "delta_management_overall_confidence": 6.0,
+  "delta_forward_guidance": 10.0,
+  "delta_analyst_pushback": -23.0,
+  "change_flags": "Management responses sentiment increased by 10.00; Forward guidance sentiment increased by 10.00; Analyst pushback level decreased by 23.00",
+  "change_summary": "vs 2025 Q2: Management responses sentiment increased by 10.00; Forward guidance sentiment increased by 10.00; Analyst pushback level decreased by 23.00.",
+  "analyzed_at": "2026-04-14T01:18:36Z"
+}

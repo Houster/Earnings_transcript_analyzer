@@ -1,0 +1,34 @@
+{
+  "ticker": "MSFT",
+  "company_name": "Microsoft Corporation",
+  "date": "2022-10-25",
+  "year": 2023,
+  "quarter": 1,
+  "industry": "Technology",
+  "management_prepared_remarks_sentiment": 72,
+  "management_responses_sentiment": 58,
+  "management_overall_confidence": 65,
+  "analyst_pushback_level": 72,
+  "forward_guidance_sentiment": 45,
+  "key_themes": [
+    "cloud growth",
+    "AI / copilot",
+    "macro / headwinds",
+    "consumption model",
+    "margins / efficiency"
+  ],
+  "notable_phrases": [
+    "do more with less",
+    "inherent volatility to that number",
+    "optimize for long-term customer loyalty by proactively helping them optimize their spend"
+  ],
+  "summary": "Microsoft delivered strong cloud results amid economic headwinds but faced pointed analyst questions about Azure growth missing guidance two quarters in a row, with management attributing the variance to customer optimization efforts and inherent volatility rather than fundamental demand weakness.",
+  "delta_management_prepared_remarks_sentiment": 0.0,
+  "delta_management_responses_sentiment": -10.0,
+  "delta_management_overall_confidence": -10.0,
+  "delta_forward_guidance": -13.0,
+  "delta_analyst_pushback": 10.0,
+  "change_flags": "Management responses sentiment decreased by 10.00; Management overall confidence decreased by 10.00; Forward guidance sentiment decreased by 13.00; Analyst pushback level increased by 10.00",
+  "change_summary": "vs 2022 Q4: Management responses sentiment decreased by 10.00; Management overall confidence decreased by 10.00; Forward guidance sentiment decreased by 13.00.",
+  "analyzed_at": "2026-04-14T01:06:46Z"
+}

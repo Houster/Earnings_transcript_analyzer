@@ -1,0 +1,34 @@
+{
+  "ticker": "MSFT",
+  "company_name": "Microsoft Corporation",
+  "date": "2024-10-30",
+  "year": 2025,
+  "quarter": 1,
+  "industry": "Technology",
+  "management_prepared_remarks_sentiment": 78,
+  "management_responses_sentiment": 72,
+  "management_overall_confidence": 75,
+  "analyst_pushback_level": 58,
+  "forward_guidance_sentiment": 68,
+  "key_themes": [
+    "AI / copilot",
+    "cloud growth",
+    "capex / investment",
+    "supply chain",
+    "developer platform"
+  ],
+  "notable_phrases": [
+    "AI business is on track to surpass an annual revenue run rate of $10 billion next quarter, which will make it the fastest business in our history to reach this milestone",
+    "some of the demand issues we have, our ability to fulfill demand is because of, in fact, external third-party stuff that we leased moving up",
+    "we'll be better able to do some supply-demand matching, and hence why we're talking about acceleration in the back half"
+  ],
+  "summary": "Microsoft reported strong AI momentum with cloud revenue exceeding $38.9 billion but acknowledged near-term supply constraints limiting Azure growth while expressing confidence in second-half acceleration as capacity comes online.",
+  "delta_management_prepared_remarks_sentiment": 0.0,
+  "delta_management_responses_sentiment": -3.0,
+  "delta_management_overall_confidence": -7.0,
+  "delta_forward_guidance": -4.0,
+  "delta_analyst_pushback": -10.0,
+  "change_flags": "Analyst pushback level decreased by 10.00",
+  "change_summary": "vs 2024 Q4: Analyst pushback level decreased by 10.00.",
+  "analyzed_at": "2026-04-14T01:18:26Z"
+}

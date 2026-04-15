@@ -1,0 +1,34 @@
+{
+  "ticker": "AAPL",
+  "company_name": "Apple Inc.",
+  "date": "2023-02-02",
+  "year": 2023,
+  "quarter": 1,
+  "industry": "Technology",
+  "management_prepared_remarks_sentiment": 62,
+  "management_responses_sentiment": 68,
+  "management_overall_confidence": 72,
+  "analyst_pushback_level": 58,
+  "forward_guidance_sentiment": 65,
+  "key_themes": [
+    "supply chain",
+    "macro / headwinds",
+    "international expansion",
+    "hardware / devices",
+    "margins / efficiency"
+  ],
+  "notable_phrases": [
+    "Production is now back where we want it to be",
+    "we now have more than 2 billion active devices",
+    "we believe iPhone would have grown during the quarter had it not been for the supply shortages"
+  ],
+  "summary": "Apple navigated Q1 FY2023 revenue decline driven by FX headwinds, COVID-related iPhone Pro supply constraints, and macro challenges, while achieving record 2 billion device install base and expressing confidence in normalized production and margin expansion.",
+  "delta_management_prepared_remarks_sentiment": -10.0,
+  "delta_management_responses_sentiment": 3.0,
+  "delta_management_overall_confidence": 4.0,
+  "delta_forward_guidance": 17.0,
+  "delta_analyst_pushback": -4.0,
+  "change_flags": "Prepared remarks sentiment decreased by 10.00; Forward guidance sentiment increased by 17.00",
+  "change_summary": "vs 2022 Q4: Prepared remarks sentiment decreased by 10.00; Forward guidance sentiment increased by 17.00.",
+  "analyzed_at": "2026-04-14T01:08:39Z"
+}

@@ -1,0 +1,34 @@
+{
+  "ticker": "AAPL",
+  "company_name": "Apple Inc.",
+  "date": "2021-10-28",
+  "year": 2021,
+  "quarter": 4,
+  "industry": "Technology",
+  "management_prepared_remarks_sentiment": 78,
+  "management_responses_sentiment": 62,
+  "management_overall_confidence": 72,
+  "analyst_pushback_level": 68,
+  "forward_guidance_sentiment": 45,
+  "key_themes": [
+    "supply chain",
+    "revenue growth",
+    "guidance / outlook",
+    "hardware / devices",
+    "international expansion"
+  ],
+  "notable_phrases": [
+    "we estimate these constraints had around a $6 billion revenue dollar impact",
+    "we believe that by the time we finish the quarter that the constraints will be larger than the 6 billion",
+    "demand is very robust"
+  ],
+  "summary": "Apple reported strong revenue growth of 29% despite $6 billion in supply chain constraints, with management expressing confidence in demand but cautioning that supply headwinds will worsen in the December quarter.",
+  "delta_management_prepared_remarks_sentiment": 6.0,
+  "delta_management_responses_sentiment": -6.0,
+  "delta_management_overall_confidence": -3.0,
+  "delta_forward_guidance": -17.0,
+  "delta_analyst_pushback": 10.0,
+  "change_flags": "Forward guidance sentiment decreased by 17.00; Analyst pushback level increased by 10.00",
+  "change_summary": "vs 2021 Q3: Forward guidance sentiment decreased by 17.00; Analyst pushback level increased by 10.00.",
+  "analyzed_at": "2026-04-14T01:07:46Z"
+}

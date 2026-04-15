@@ -1,0 +1,34 @@
+{
+  "ticker": "AAPL",
+  "company_name": "Apple Inc.",
+  "date": "2026-01-29",
+  "year": 2026,
+  "quarter": 1,
+  "industry": "Technology",
+  "management_prepared_remarks_sentiment": 92,
+  "management_responses_sentiment": 68,
+  "management_overall_confidence": 72,
+  "analyst_pushback_level": 74,
+  "forward_guidance_sentiment": 65,
+  "key_themes": [
+    "AI / copilot",
+    "supply chain",
+    "revenue growth",
+    "margins / efficiency",
+    "international expansion"
+  ],
+  "notable_phrases": [
+    "demand for iPhone was simply staggering",
+    "currently constrained and difficult to predict when supply and demand will balance",
+    "market pricing for memory increasing significantly"
+  ],
+  "summary": "Apple reported record Q1 results with exceptional iPhone demand driving 16% revenue growth, but management faces analyst scrutiny over supply constraints, memory pricing pressures, and AI monetization strategy amid a Google partnership announcement.",
+  "delta_management_prepared_remarks_sentiment": 7.0,
+  "delta_management_responses_sentiment": -4.0,
+  "delta_management_overall_confidence": -6.0,
+  "delta_forward_guidance": -15.0,
+  "delta_analyst_pushback": 12.0,
+  "change_flags": "Forward guidance sentiment decreased by 15.00; Analyst pushback level increased by 12.00",
+  "change_summary": "vs 2025 Q4: Forward guidance sentiment decreased by 15.00; Analyst pushback level increased by 12.00.",
+  "analyzed_at": "2026-04-14T01:11:02Z"
+}

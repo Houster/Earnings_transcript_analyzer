@@ -1,0 +1,34 @@
+{
+  "ticker": "AAPL",
+  "company_name": "Apple Inc.",
+  "date": "2025-10-30",
+  "year": 2025,
+  "quarter": 4,
+  "industry": "Technology",
+  "management_prepared_remarks_sentiment": 85,
+  "management_responses_sentiment": 72,
+  "management_overall_confidence": 78,
+  "analyst_pushback_level": 62,
+  "forward_guidance_sentiment": 80,
+  "key_themes": [
+    "AI / copilot",
+    "supply chain",
+    "revenue growth",
+    "international expansion",
+    "margins / efficiency"
+  ],
+  "notable_phrases": [
+    "strongest iPhone lineup ever",
+    "we're constrained today on several models of the iPhone 17",
+    "we expect to return to growth this quarter"
+  ],
+  "summary": "Apple reported record Q4 results with strong iPhone 17 demand creating supply constraints, robust services growth accelerating to 15%, and confident guidance for best-ever December quarter despite China weakness and tariff headwinds.",
+  "delta_management_prepared_remarks_sentiment": 7.0,
+  "delta_management_responses_sentiment": 10.0,
+  "delta_management_overall_confidence": 7.0,
+  "delta_forward_guidance": 22.0,
+  "delta_analyst_pushback": -6.0,
+  "change_flags": "Management responses sentiment increased by 10.00; Forward guidance sentiment increased by 22.00",
+  "change_summary": "vs 2025 Q3: Management responses sentiment increased by 10.00; Forward guidance sentiment increased by 22.00.",
+  "analyzed_at": "2026-04-14T01:10:57Z"
+}

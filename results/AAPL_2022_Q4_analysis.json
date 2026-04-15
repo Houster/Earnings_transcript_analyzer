@@ -1,0 +1,34 @@
+{
+  "ticker": "AAPL",
+  "company_name": "Apple Inc.",
+  "date": "2022-10-27",
+  "year": 2022,
+  "quarter": 4,
+  "industry": "Technology",
+  "management_prepared_remarks_sentiment": 72,
+  "management_responses_sentiment": 65,
+  "management_overall_confidence": 68,
+  "analyst_pushback_level": 62,
+  "forward_guidance_sentiment": 48,
+  "key_themes": [
+    "revenue growth",
+    "macro / headwinds",
+    "supply chain",
+    "hardware / devices",
+    "margins / efficiency"
+  ],
+  "notable_phrases": [
+    "we've been constrained on the 14 pro and the 14 pro max",
+    "330 basis points of negative exchange",
+    "difficult to say what the mix will be until we can satisfy the demand"
+  ],
+  "summary": "Apple reported record quarterly revenue despite significant foreign exchange headwinds and supply constraints on iPhone 14 Pro models, while management expressed cautious optimism amid macro uncertainty and currency pressures.",
+  "delta_management_prepared_remarks_sentiment": 0.0,
+  "delta_management_responses_sentiment": 0.0,
+  "delta_management_overall_confidence": 0.0,
+  "delta_forward_guidance": -7.0,
+  "delta_analyst_pushback": 0.0,
+  "change_flags": "no material changes",
+  "change_summary": "No material changes detected vs 2022 Q3; scores broadly stable QoQ.",
+  "analyzed_at": "2026-04-14T01:08:33Z"
+}

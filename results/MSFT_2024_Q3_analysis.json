@@ -1,0 +1,34 @@
+{
+  "ticker": "MSFT",
+  "company_name": "Microsoft Corporation",
+  "date": "2024-04-25",
+  "year": 2024,
+  "quarter": 3,
+  "industry": "Technology",
+  "management_prepared_remarks_sentiment": 82,
+  "management_responses_sentiment": 78,
+  "management_overall_confidence": 85,
+  "analyst_pushback_level": 62,
+  "forward_guidance_sentiment": 75,
+  "key_themes": [
+    "AI / copilot",
+    "cloud growth",
+    "capex / investment",
+    "developer platform",
+    "digital transformation"
+  ],
+  "notable_phrases": [
+    "record third quarter powered by the continued strength of Microsoft Cloud",
+    "faster diffusion, faster rate of adoption than anything we have seen in the past",
+    "we feel very, very good about the, you know, we're fundamentally a share taker"
+  ],
+  "summary": "Microsoft reported strong cloud and AI momentum with accelerating Azure growth and expanding Copilot adoption, while management confidently defended significant infrastructure investments despite analyst scrutiny on capacity constraints and ROI timelines.",
+  "delta_management_prepared_remarks_sentiment": 0.0,
+  "delta_management_responses_sentiment": 3.0,
+  "delta_management_overall_confidence": 7.0,
+  "delta_forward_guidance": 3.0,
+  "delta_analyst_pushback": 27.0,
+  "change_flags": "Analyst pushback level increased by 27.00",
+  "change_summary": "vs 2024 Q2: Analyst pushback level increased by 27.00.",
+  "analyzed_at": "2026-04-14T01:18:11Z"
+}

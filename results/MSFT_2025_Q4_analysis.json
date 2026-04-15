@@ -1,0 +1,34 @@
+{
+  "ticker": "MSFT",
+  "company_name": "Microsoft Corporation",
+  "date": "2025-07-30",
+  "year": 2025,
+  "quarter": 4,
+  "industry": "Technology",
+  "management_prepared_remarks_sentiment": 88,
+  "management_responses_sentiment": 82,
+  "management_overall_confidence": 87,
+  "analyst_pushback_level": 18,
+  "forward_guidance_sentiment": 78,
+  "key_themes": [
+    "AI / copilot",
+    "cloud growth",
+    "capex / investment",
+    "developer platform",
+    "margins / efficiency"
+  ],
+  "notable_phrases": [
+    "record fiscal year",
+    "fastest growing database product in our history",
+    "accelerate Azure while slowing down CapEx"
+  ],
+  "summary": "Microsoft reported a record fiscal year with strong Azure and AI momentum, demonstrating confidence in sustained cloud migration and AI platform diffusion while managing capital efficiency.",
+  "delta_management_prepared_remarks_sentiment": 6.0,
+  "delta_management_responses_sentiment": 7.0,
+  "delta_management_overall_confidence": 9.0,
+  "delta_forward_guidance": 6.0,
+  "delta_analyst_pushback": -17.0,
+  "change_flags": "Analyst pushback level decreased by 17.00",
+  "change_summary": "vs 2025 Q3: Analyst pushback level decreased by 17.00.",
+  "analyzed_at": "2026-04-14T01:18:41Z"
+}

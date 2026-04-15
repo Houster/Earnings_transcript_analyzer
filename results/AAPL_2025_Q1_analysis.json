@@ -1,0 +1,33 @@
+{
+  "ticker": "AAPL",
+  "company_name": "Apple Inc.",
+  "date": "2025-01-30",
+  "year": 2025,
+  "quarter": 1,
+  "industry": "Technology",
+  "management_prepared_remarks_sentiment": 78,
+  "management_responses_sentiment": 72,
+  "management_overall_confidence": 75,
+  "analyst_pushback_level": 62,
+  "forward_guidance_sentiment": 65,
+  "key_themes": [
+    "AI / copilot",
+    "international expansion",
+    "margins / efficiency",
+    "macro / headwinds"
+  ],
+  "notable_phrases": [
+    "all-time revenue records across the majority of the countries and regions we track",
+    "markets where we had rolled out Apple Intelligence, that the year-over-year performance on the iPhone 16 family was stronger",
+    "over half of the decline that we experienced was driven by a change in channel inventory"
+  ],
+  "summary": "Apple reported record quarterly revenue driven by Apple Intelligence momentum in launched markets, though facing China headwinds partially attributed to channel inventory adjustments and lack of AI feature availability in the region.",
+  "delta_management_prepared_remarks_sentiment": 0.0,
+  "delta_management_responses_sentiment": 0.0,
+  "delta_management_overall_confidence": 0.0,
+  "delta_forward_guidance": 3.0,
+  "delta_analyst_pushback": 17.0,
+  "change_flags": "Analyst pushback level increased by 17.00",
+  "change_summary": "vs 2024 Q4: Analyst pushback level increased by 17.00.",
+  "analyzed_at": "2026-04-14T01:10:15Z"
+}

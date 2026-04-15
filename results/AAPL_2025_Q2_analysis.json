@@ -1,0 +1,34 @@
+{
+  "ticker": "AAPL",
+  "company_name": "Apple Inc.",
+  "date": "2025-05-01",
+  "year": 2025,
+  "quarter": 2,
+  "industry": "Technology",
+  "management_prepared_remarks_sentiment": 72,
+  "management_responses_sentiment": 48,
+  "management_overall_confidence": 42,
+  "analyst_pushback_level": 78,
+  "forward_guidance_sentiment": 52,
+  "key_themes": [
+    "supply chain",
+    "tariffs / trade",
+    "capex / investment",
+    "international expansion",
+    "margins / efficiency"
+  ],
+  "notable_phrases": [
+    "very difficult to predict beyond June",
+    "given the uncertainty we see from several factors, we aren't providing the category level of color today",
+    "I wouldn't want to predict the future because I'm not sure what will happen with the tariffs"
+  ],
+  "summary": "Apple reported solid Q2 results with record services revenue and announced $500 billion U.S. investment, but management repeatedly declined to provide detailed guidance beyond June quarter due to tariff uncertainty and ongoing Section 232 investigation, while analysts aggressively probed supply chain shifts, tariff impacts, and demand trends.",
+  "delta_management_prepared_remarks_sentiment": -6.0,
+  "delta_management_responses_sentiment": -24.0,
+  "delta_management_overall_confidence": -33.0,
+  "delta_forward_guidance": -13.0,
+  "delta_analyst_pushback": 16.0,
+  "change_flags": "Management responses sentiment decreased by 24.00; Management overall confidence decreased by 33.00; Forward guidance sentiment decreased by 13.00; Analyst pushback level increased by 16.00",
+  "change_summary": "vs 2025 Q1: Management responses sentiment decreased by 24.00; Management overall confidence decreased by 33.00; Forward guidance sentiment decreased by 13.00.",
+  "analyzed_at": "2026-04-14T01:10:33Z"
+}

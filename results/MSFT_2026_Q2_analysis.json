@@ -1,0 +1,33 @@
+{
+  "ticker": "MSFT",
+  "company_name": "Microsoft Corporation",
+  "date": "2026-01-28",
+  "year": 2026,
+  "quarter": 2,
+  "industry": "Technology",
+  "management_prepared_remarks_sentiment": 78,
+  "management_responses_sentiment": 72,
+  "management_overall_confidence": 75,
+  "analyst_pushback_level": 72,
+  "forward_guidance_sentiment": 68,
+  "key_themes": [
+    "AI / copilot",
+    "capex / investment",
+    "cloud growth",
+    "margins / efficiency"
+  ],
+  "notable_phrases": [
+    "Microsoft Cloud surpassed $50 billion in revenue for the first time",
+    "we have built an AI business that is larger than some of our biggest franchises that took decades to build",
+    "the majority of the capital that we're spending today and a lot of the GPUs that we're buying are already contracted for most of their useful life"
+  ],
+  "summary": "Microsoft reported strong cloud and AI growth with $50B+ cloud revenue but faced investor scrutiny over accelerating CapEx relative to Azure growth, with management defending capacity allocation across multiple high-value AI products beyond just Azure.",
+  "delta_management_prepared_remarks_sentiment": -7.0,
+  "delta_management_responses_sentiment": -6.0,
+  "delta_management_overall_confidence": -7.0,
+  "delta_forward_guidance": -7.0,
+  "delta_analyst_pushback": 4.0,
+  "change_flags": "no material changes",
+  "change_summary": "No material changes detected vs 2026 Q1; scores broadly stable QoQ.",
+  "analyzed_at": "2026-04-14T01:18:53Z"
+}

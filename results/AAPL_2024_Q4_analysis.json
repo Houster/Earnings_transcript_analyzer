@@ -1,0 +1,34 @@
+{
+  "ticker": "AAPL",
+  "company_name": "Apple Inc.",
+  "date": "2024-10-31",
+  "year": 2024,
+  "quarter": 4,
+  "industry": "Technology",
+  "management_prepared_remarks_sentiment": 78,
+  "management_responses_sentiment": 72,
+  "management_overall_confidence": 75,
+  "analyst_pushback_level": 45,
+  "forward_guidance_sentiment": 62,
+  "key_themes": [
+    "AI / copilot",
+    "guidance / outlook",
+    "international expansion",
+    "hardware / devices",
+    "margins / efficiency"
+  ],
+  "notable_phrases": [
+    "Apple Intelligence marks the beginning of a new chapter for Apple innovation",
+    "18.1 adoption is twice as fast as the 17.1 adoption",
+    "strongest lineup we've ever had going into the holiday season"
+  ],
+  "summary": "Apple reported strong Q4 results with record revenue driven by iPhone growth and services expansion, emphasizing the transformative potential of Apple Intelligence while providing cautious low-to-mid single digit growth guidance for the December quarter.",
+  "delta_management_prepared_remarks_sentiment": 6.0,
+  "delta_management_responses_sentiment": 7.0,
+  "delta_management_overall_confidence": 7.0,
+  "delta_forward_guidance": 0.0,
+  "delta_analyst_pushback": -13.0,
+  "change_flags": "Analyst pushback level decreased by 13.00",
+  "change_summary": "vs 2024 Q3: Analyst pushback level decreased by 13.00.",
+  "analyzed_at": "2026-04-14T01:10:09Z"
+}

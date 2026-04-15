@@ -1,0 +1,34 @@
+{
+  "ticker": "MSFT",
+  "company_name": "Microsoft Corporation",
+  "date": "2023-07-25",
+  "year": 2023,
+  "quarter": 4,
+  "industry": "Technology",
+  "management_prepared_remarks_sentiment": 78,
+  "management_responses_sentiment": 72,
+  "management_overall_confidence": 82,
+  "analyst_pushback_level": 42,
+  "forward_guidance_sentiment": 68,
+  "key_themes": [
+    "AI / copilot",
+    "cloud growth",
+    "capex / investment",
+    "margins / efficiency",
+    "developer platform"
+  ],
+  "notable_phrases": [
+    "Microsoft Cloud surpassed $110 billion in annual revenue, up 27% in constant currency",
+    "nearly 100 new customers added every day this quarter",
+    "delivering in FY24 over FY23 effectively a point higher operating margins"
+  ],
+  "summary": "Microsoft reported strong cloud growth driven by rapid AI adoption with significant customer momentum in Azure OpenAI and Copilot products, while managing optimization headwinds and accelerating CapEx investments to meet AI demand.",
+  "delta_management_prepared_remarks_sentiment": 0.0,
+  "delta_management_responses_sentiment": 0.0,
+  "delta_management_overall_confidence": 6.0,
+  "delta_forward_guidance": 0.0,
+  "delta_analyst_pushback": 0.0,
+  "change_flags": "no material changes",
+  "change_summary": "No material changes detected vs 2023 Q3; scores broadly stable QoQ.",
+  "analyzed_at": "2026-04-14T01:07:03Z"
+}

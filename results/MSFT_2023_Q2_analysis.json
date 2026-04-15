@@ -1,0 +1,33 @@
+{
+  "ticker": "MSFT",
+  "company_name": "Microsoft Corporation",
+  "date": "2023-01-24",
+  "year": 2023,
+  "quarter": 2,
+  "industry": "Technology",
+  "management_prepared_remarks_sentiment": 62,
+  "management_responses_sentiment": 58,
+  "management_overall_confidence": 72,
+  "analyst_pushback_level": 68,
+  "forward_guidance_sentiment": 42,
+  "key_themes": [
+    "AI / copilot",
+    "cloud growth",
+    "macro / headwinds",
+    "margins / efficiency"
+  ],
+  "notable_phrases": [
+    "we are now seeing them optimize that spend",
+    "we're going to lead in the AI era",
+    "optimization cycle finishes the projects start"
+  ],
+  "summary": "Microsoft emphasizes AI leadership and long-term cloud opportunity while acknowledging near-term customer optimization and macro caution impacting growth rates.",
+  "delta_management_prepared_remarks_sentiment": -10.0,
+  "delta_management_responses_sentiment": 0.0,
+  "delta_management_overall_confidence": 7.0,
+  "delta_forward_guidance": -3.0,
+  "delta_analyst_pushback": -4.0,
+  "change_flags": "Prepared remarks sentiment decreased by 10.00",
+  "change_summary": "vs 2023 Q1: Prepared remarks sentiment decreased by 10.00.",
+  "analyzed_at": "2026-04-14T01:06:51Z"
+}

@@ -1,0 +1,34 @@
+{
+  "ticker": "AAPL",
+  "company_name": "Apple Inc.",
+  "date": "2024-05-02",
+  "year": 2024,
+  "quarter": 2,
+  "industry": "Technology",
+  "management_prepared_remarks_sentiment": 72,
+  "management_responses_sentiment": 65,
+  "management_overall_confidence": 68,
+  "analyst_pushback_level": 72,
+  "forward_guidance_sentiment": 58,
+  "key_themes": [
+    "AI / copilot",
+    "international expansion",
+    "guidance / outlook",
+    "margins / efficiency",
+    "macro / headwinds"
+  ],
+  "notable_phrases": [
+    "we continue to feel very bullish about our opportunity in generative AI",
+    "it's really too early to answer the question",
+    "the most competitive market in the world"
+  ],
+  "summary": "Apple delivered mixed results with services strength offset by product headwinds, while management expressed optimism about upcoming AI initiatives despite facing persistent analyst scrutiny on China weakness, competitive pressures, and monetization strategies.",
+  "delta_management_prepared_remarks_sentiment": -6.0,
+  "delta_management_responses_sentiment": -3.0,
+  "delta_management_overall_confidence": -4.0,
+  "delta_forward_guidance": 3.0,
+  "delta_analyst_pushback": 14.0,
+  "change_flags": "Analyst pushback level increased by 14.00",
+  "change_summary": "vs 2024 Q1: Analyst pushback level increased by 14.00.",
+  "analyzed_at": "2026-04-14T01:09:46Z"
+}

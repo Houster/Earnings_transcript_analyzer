@@ -6,7 +6,6 @@
 # ------------------------------------------------------------
 
 from analyzer import run_analysis_multi_year
-
 from dotenv import load_dotenv
 load_dotenv()
 

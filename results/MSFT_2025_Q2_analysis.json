@@ -1,0 +1,34 @@
+{
+  "ticker": "MSFT",
+  "company_name": "Microsoft Corporation",
+  "date": "2025-01-29",
+  "year": 2025,
+  "quarter": 2,
+  "industry": "Technology",
+  "management_prepared_remarks_sentiment": 78,
+  "management_responses_sentiment": 65,
+  "management_overall_confidence": 72,
+  "analyst_pushback_level": 58,
+  "forward_guidance_sentiment": 62,
+  "key_themes": [
+    "AI / copilot",
+    "cloud growth",
+    "capex / investment",
+    "supply chain",
+    "execution challenges"
+  ],
+  "notable_phrases": [
+    "AI business has now surpassed an annual revenue run rate of $13 billion, up 175% year-over-year",
+    "near-term execution issues were in the non-AI ACR component",
+    "you would rather win the new than just protect the past"
+  ],
+  "summary": "Microsoft reported strong AI momentum with $13B run rate but acknowledged execution challenges in non-AI Azure scale motions while maintaining confidence in capacity expansion and H2 acceleration.",
+  "delta_management_prepared_remarks_sentiment": 0.0,
+  "delta_management_responses_sentiment": -7.0,
+  "delta_management_overall_confidence": -3.0,
+  "delta_forward_guidance": -6.0,
+  "delta_analyst_pushback": 0.0,
+  "change_flags": "no material changes",
+  "change_summary": "No material changes detected vs 2025 Q1; scores broadly stable QoQ.",
+  "analyzed_at": "2026-04-14T01:18:31Z"
+}

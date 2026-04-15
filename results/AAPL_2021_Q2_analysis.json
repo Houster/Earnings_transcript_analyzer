@@ -1,0 +1,34 @@
+{
+  "ticker": "AAPL",
+  "company_name": "Apple Inc.",
+  "date": "2021-04-28",
+  "year": 2021,
+  "quarter": 2,
+  "industry": "Technology",
+  "management_prepared_remarks_sentiment": 82,
+  "management_responses_sentiment": 75,
+  "management_overall_confidence": 78,
+  "analyst_pushback_level": 42,
+  "forward_guidance_sentiment": 58,
+  "key_themes": [
+    "revenue growth",
+    "supply chain",
+    "hardware / devices",
+    "guidance / outlook",
+    "developer platform"
+  ],
+  "notable_phrases": [
+    "busting our year-ago revenue performance by 54%",
+    "we wish we had more inventory of iPad and Mac",
+    "we're in the early days of 5G"
+  ],
+  "summary": "Apple reported record March quarter results with 54% revenue growth driven by strong iPhone 12 demand and services acceleration, though management flagged $3-4 billion in supply constraints primarily affecting iPad and Mac for the June quarter.",
+  "delta_management_prepared_remarks_sentiment": 4.0,
+  "delta_management_responses_sentiment": 3.0,
+  "delta_management_overall_confidence": -4.0,
+  "delta_forward_guidance": -10.0,
+  "delta_analyst_pushback": 0.0,
+  "change_flags": "Forward guidance sentiment decreased by 10.00",
+  "change_summary": "vs 2021 Q1: Forward guidance sentiment decreased by 10.00.",
+  "analyzed_at": "2026-04-14T01:07:36Z"
+}

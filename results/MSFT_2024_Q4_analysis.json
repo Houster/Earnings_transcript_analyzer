@@ -1,0 +1,34 @@
+{
+  "ticker": "MSFT",
+  "company_name": "Microsoft Corporation",
+  "date": "2024-07-30",
+  "year": 2024,
+  "quarter": 4,
+  "industry": "Technology",
+  "management_prepared_remarks_sentiment": 78,
+  "management_responses_sentiment": 75,
+  "management_overall_confidence": 82,
+  "analyst_pushback_level": 68,
+  "forward_guidance_sentiment": 72,
+  "key_themes": [
+    "AI / copilot",
+    "capex / investment",
+    "cloud growth",
+    "margins / efficiency",
+    "revenue growth"
+  ],
+  "notable_phrases": [
+    "demand signal and time to value to manage our cost structure dynamically and generate durable long-term operating leverage",
+    "industry debate raging around the CapEx requirements around generative AI and whether the monetization is actually going to match",
+    "We have a consistent platform for AI. So because we're building to one Azure AI stack, we don't have to have multiple infrastructure investments"
+  ],
+  "summary": "Microsoft reported strong AI-driven growth with accelerating Azure revenue and expanding Copilot adoption, while management addressed investor concerns about elevated CapEx spending by emphasizing demand-driven investment and flexible long-term infrastructure assets.",
+  "delta_management_prepared_remarks_sentiment": -4.0,
+  "delta_management_responses_sentiment": -3.0,
+  "delta_management_overall_confidence": -3.0,
+  "delta_forward_guidance": -3.0,
+  "delta_analyst_pushback": 6.0,
+  "change_flags": "no material changes",
+  "change_summary": "No material changes detected vs 2024 Q3; scores broadly stable QoQ.",
+  "analyzed_at": "2026-04-14T01:18:18Z"
+}

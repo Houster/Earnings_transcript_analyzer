@@ -1,0 +1,34 @@
+{
+  "ticker": "AAPL",
+  "company_name": "Apple Inc.",
+  "date": "2021-07-27",
+  "year": 2021,
+  "quarter": 3,
+  "industry": "Technology",
+  "management_prepared_remarks_sentiment": 72,
+  "management_responses_sentiment": 68,
+  "management_overall_confidence": 75,
+  "analyst_pushback_level": 58,
+  "forward_guidance_sentiment": 62,
+  "key_themes": [
+    "revenue growth",
+    "supply chain",
+    "guidance / outlook",
+    "hardware / devices",
+    "international expansion"
+  ],
+  "notable_phrases": [
+    "very strong double-digit growth",
+    "supply constraints will be higher during the September quarter",
+    "we're only in the early innings of 5G"
+  ],
+  "summary": "Apple reported record June quarter results with strong double-digit growth across all segments but cautioned that supply constraints would increase in September while maintaining confident outlook for continued strong performance.",
+  "delta_management_prepared_remarks_sentiment": -10.0,
+  "delta_management_responses_sentiment": -7.0,
+  "delta_management_overall_confidence": -3.0,
+  "delta_forward_guidance": 4.0,
+  "delta_analyst_pushback": 16.0,
+  "change_flags": "Prepared remarks sentiment decreased by 10.00; Analyst pushback level increased by 16.00",
+  "change_summary": "vs 2021 Q2: Prepared remarks sentiment decreased by 10.00; Analyst pushback level increased by 16.00.",
+  "analyzed_at": "2026-04-14T01:07:41Z"
+}

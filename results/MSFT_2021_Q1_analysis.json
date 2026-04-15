@@ -1,0 +1,34 @@
+{
+  "ticker": "MSFT",
+  "company_name": "Microsoft Corporation",
+  "date": "2020-10-27",
+  "year": 2021,
+  "quarter": 1,
+  "industry": "Technology",
+  "management_prepared_remarks_sentiment": 78,
+  "management_responses_sentiment": 72,
+  "management_overall_confidence": 75,
+  "analyst_pushback_level": 35,
+  "forward_guidance_sentiment": 68,
+  "key_themes": [
+    "cloud growth",
+    "digital transformation",
+    "developer platform",
+    "security",
+    "margins / efficiency"
+  ],
+  "notable_phrases": [
+    "strong start in fiscal 2021, driven by the continued strength of our commercial cloud",
+    "the next decade of economic performance for every business will be defined by the speed of their digital transformation",
+    "we intend to continue to go after the opportunity we see"
+  ],
+  "summary": "Microsoft reported strong Q1 FY2021 results with commercial cloud surpassing $15B revenue and 31% growth, emphasizing Azure expansion, digital transformation acceleration, and continued investment in growth opportunities despite some margin pressure and bookings volatility.",
+  "delta_management_prepared_remarks_sentiment": null,
+  "delta_management_responses_sentiment": null,
+  "delta_management_overall_confidence": null,
+  "delta_forward_guidance": null,
+  "delta_analyst_pushback": null,
+  "change_flags": "first quarter — no prior period",
+  "change_summary": "No prior quarter available for comparison.",
+  "analyzed_at": "2026-04-14T01:06:03Z"
+}

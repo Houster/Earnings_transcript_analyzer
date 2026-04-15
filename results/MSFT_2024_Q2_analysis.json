@@ -1,0 +1,34 @@
+{
+  "ticker": "MSFT",
+  "company_name": "Microsoft Corporation",
+  "date": "2024-01-30",
+  "year": 2024,
+  "quarter": 2,
+  "industry": "Technology",
+  "management_prepared_remarks_sentiment": 82,
+  "management_responses_sentiment": 75,
+  "management_overall_confidence": 78,
+  "analyst_pushback_level": 35,
+  "forward_guidance_sentiment": 72,
+  "key_themes": [
+    "AI / copilot",
+    "cloud growth",
+    "capex / investment",
+    "margins / efficiency",
+    "developer platform"
+  ],
+  "notable_phrases": [
+    "We have moved from talking about AI to applying AI at scale",
+    "record quarter driven by the continued strength of Microsoft Cloud",
+    "margin improvement is pretty shocking to most considering the investments"
+  ],
+  "summary": "Microsoft delivered a record quarter with strong cloud and AI momentum, demonstrating significant margin expansion despite heavy AI infrastructure investments while analysts probed gently on Azure AI composition and capacity constraints.",
+  "delta_management_prepared_remarks_sentiment": 0.0,
+  "delta_management_responses_sentiment": 0.0,
+  "delta_management_overall_confidence": 0.0,
+  "delta_forward_guidance": 4.0,
+  "delta_analyst_pushback": -7.0,
+  "change_flags": "no material changes",
+  "change_summary": "No material changes detected vs 2024 Q1; scores broadly stable QoQ.",
+  "analyzed_at": "2026-04-14T01:18:06Z"
+}

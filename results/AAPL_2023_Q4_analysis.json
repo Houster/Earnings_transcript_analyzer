@@ -1,0 +1,34 @@
+{
+  "ticker": "AAPL",
+  "company_name": "Apple Inc.",
+  "date": "2023-11-03",
+  "year": 2023,
+  "quarter": 4,
+  "industry": "Technology",
+  "management_prepared_remarks_sentiment": 72,
+  "management_responses_sentiment": 68,
+  "management_overall_confidence": 75,
+  "analyst_pushback_level": 42,
+  "forward_guidance_sentiment": 65,
+  "key_themes": [
+    "revenue growth",
+    "international expansion",
+    "supply chain",
+    "margins / efficiency",
+    "hardware / devices"
+  ],
+  "notable_phrases": [
+    "all-time revenue record in India",
+    "expect to be in supply-demand balance by the end of the quarter",
+    "very strong levels of gross margin"
+  ],
+  "summary": "Apple reported strong September quarter results with iPhone and Services records despite macro headwinds, guiding to improved margins and supply balance by quarter-end while highlighting international growth and new product launches.",
+  "delta_management_prepared_remarks_sentiment": 0.0,
+  "delta_management_responses_sentiment": 0.0,
+  "delta_management_overall_confidence": 4.0,
+  "delta_forward_guidance": 0.0,
+  "delta_analyst_pushback": -16.0,
+  "change_flags": "Analyst pushback level decreased by 16.00",
+  "change_summary": "vs 2023 Q3: Analyst pushback level decreased by 16.00.",
+  "analyzed_at": "2026-04-14T01:09:21Z"
+}

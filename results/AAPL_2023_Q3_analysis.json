@@ -1,0 +1,34 @@
+{
+  "ticker": "AAPL",
+  "company_name": "Apple Inc.",
+  "date": "2023-08-03",
+  "year": 2023,
+  "quarter": 3,
+  "industry": "Technology",
+  "management_prepared_remarks_sentiment": 72,
+  "management_responses_sentiment": 68,
+  "management_overall_confidence": 71,
+  "analyst_pushback_level": 58,
+  "forward_guidance_sentiment": 65,
+  "key_themes": [
+    "international expansion",
+    "services growth",
+    "margins / efficiency",
+    "macro / headwinds",
+    "hardware / devices"
+  ],
+  "notable_phrases": [
+    "all-time revenue record in services",
+    "uneven macroeconomic environment",
+    "we continue to manage deliberately and innovate relentlessly"
+  ],
+  "summary": "Apple reported better-than-expected Q3 results with record services revenue and strong emerging market performance despite macro headwinds and FX challenges, guiding to continued iPhone and services acceleration with historically high gross margins.",
+  "delta_management_prepared_remarks_sentiment": 4.0,
+  "delta_management_responses_sentiment": -4.0,
+  "delta_management_overall_confidence": 6.0,
+  "delta_forward_guidance": 10.0,
+  "delta_analyst_pushback": 0.0,
+  "change_flags": "Forward guidance sentiment increased by 10.00",
+  "change_summary": "vs 2023 Q2: Forward guidance sentiment increased by 10.00.",
+  "analyzed_at": "2026-04-14T01:09:02Z"
+}

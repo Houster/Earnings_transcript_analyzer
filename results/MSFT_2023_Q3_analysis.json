@@ -1,0 +1,34 @@
+{
+  "ticker": "MSFT",
+  "company_name": "Microsoft Corporation",
+  "date": "2023-04-25",
+  "year": 2023,
+  "quarter": 3,
+  "industry": "Technology",
+  "management_prepared_remarks_sentiment": 78,
+  "management_responses_sentiment": 72,
+  "management_overall_confidence": 76,
+  "analyst_pushback_level": 42,
+  "forward_guidance_sentiment": 68,
+  "key_themes": [
+    "AI / copilot",
+    "cloud growth",
+    "margins / efficiency",
+    "consumption model",
+    "developer platform"
+  ],
+  "notable_phrases": [
+    "Microsoft Cloud delivered over $28 billion in quarterly revenue, up 22% and 25% in constant currency",
+    "we now have more than 2,500 Azure OpenAI service customers up 10x quarter over quarter",
+    "our focus is going to be, and will be, on continuing to take a growing share"
+  ],
+  "summary": "Microsoft demonstrates strong cloud and AI momentum with Azure OpenAI scaling rapidly while managing optimization headwinds and positioning for market share gains through copilot monetization across the platform.",
+  "delta_management_prepared_remarks_sentiment": 16.0,
+  "delta_management_responses_sentiment": 14.0,
+  "delta_management_overall_confidence": 4.0,
+  "delta_forward_guidance": 26.0,
+  "delta_analyst_pushback": -26.0,
+  "change_flags": "Prepared remarks sentiment increased by 16.00; Management responses sentiment increased by 14.00; Forward guidance sentiment increased by 26.00; Analyst pushback level decreased by 26.00",
+  "change_summary": "vs 2023 Q2: Prepared remarks sentiment increased by 16.00; Management responses sentiment increased by 14.00; Forward guidance sentiment increased by 26.00.",
+  "analyzed_at": "2026-04-14T01:06:57Z"
+}

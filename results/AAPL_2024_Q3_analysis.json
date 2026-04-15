@@ -1,0 +1,34 @@
+{
+  "ticker": "AAPL",
+  "company_name": "Apple Inc.",
+  "date": "2024-08-01",
+  "year": 2024,
+  "quarter": 3,
+  "industry": "Technology",
+  "management_prepared_remarks_sentiment": 72,
+  "management_responses_sentiment": 65,
+  "management_overall_confidence": 68,
+  "analyst_pushback_level": 58,
+  "forward_guidance_sentiment": 62,
+  "key_themes": [
+    "AI / copilot",
+    "international expansion",
+    "hardware / devices",
+    "margins / efficiency",
+    "developer platform"
+  ],
+  "notable_phrases": [
+    "game-changing updates across our platforms, including Apple Intelligence",
+    "we are very excited about Apple Intelligence and what it brings",
+    "we continue to be confident in the long-term opportunity in China"
+  ],
+  "summary": "Apple reported better-than-expected Q3 results with record services revenue and emphasized Apple Intelligence as a compelling upgrade catalyst, while addressing China headwinds and margin pressures with measured optimism.",
+  "delta_management_prepared_remarks_sentiment": 0.0,
+  "delta_management_responses_sentiment": 0.0,
+  "delta_management_overall_confidence": 0.0,
+  "delta_forward_guidance": 4.0,
+  "delta_analyst_pushback": -14.0,
+  "change_flags": "Analyst pushback level decreased by 14.00",
+  "change_summary": "vs 2024 Q2: Analyst pushback level decreased by 14.00.",
+  "analyzed_at": "2026-04-14T01:09:51Z"
+}

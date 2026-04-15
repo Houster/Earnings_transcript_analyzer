@@ -1,0 +1,34 @@
+{
+  "ticker": "MSFT",
+  "company_name": "Microsoft Corporation",
+  "date": "2022-04-26",
+  "year": 2022,
+  "quarter": 3,
+  "industry": "Technology",
+  "management_prepared_remarks_sentiment": 82,
+  "management_responses_sentiment": 75,
+  "management_overall_confidence": 78,
+  "analyst_pushback_level": 42,
+  "forward_guidance_sentiment": 72,
+  "key_themes": [
+    "cloud growth",
+    "digital transformation",
+    "macro / headwinds",
+    "consumption model",
+    "partner ecosystem"
+  ],
+  "notable_phrases": [
+    "digital technology will be the key input that powers the world's economic output",
+    "tech as a percentage of GDP on a secular basis by the end of the decade going to double",
+    "in an inflationary environment, the only deflationary force is software"
+  ],
+  "summary": "Microsoft delivered record cloud results with Azure acceleration and strong Office growth, expressing confidence in long-term secular trends despite macro uncertainty and near-term partner transition headwinds.",
+  "delta_management_prepared_remarks_sentiment": 0.0,
+  "delta_management_responses_sentiment": -3.0,
+  "delta_management_overall_confidence": -7.0,
+  "delta_forward_guidance": -3.0,
+  "delta_analyst_pushback": 17.0,
+  "change_flags": "Analyst pushback level increased by 17.00",
+  "change_summary": "vs 2022 Q2: Analyst pushback level increased by 17.00.",
+  "analyzed_at": "2026-04-14T01:06:35Z"
+}

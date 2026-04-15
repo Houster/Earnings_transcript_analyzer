@@ -1,0 +1,34 @@
+{
+  "ticker": "AAPL",
+  "company_name": "Apple Inc.",
+  "date": "2022-04-28",
+  "year": 2022,
+  "quarter": 2,
+  "industry": "Technology",
+  "management_prepared_remarks_sentiment": 72,
+  "management_responses_sentiment": 58,
+  "management_overall_confidence": 62,
+  "analyst_pushback_level": 68,
+  "forward_guidance_sentiment": 42,
+  "key_themes": [
+    "supply chain",
+    "macro / headwinds",
+    "revenue growth",
+    "hardware / devices",
+    "guidance / outlook"
+  ],
+  "notable_phrases": [
+    "supply constraints to be in the range of 4 to 8 billion",
+    "COVID-related disruptions in China",
+    "a percentage of it that is recapturable and a percentage of it that is likely not"
+  ],
+  "summary": "Apple reported strong March quarter results with record revenue of $97.3 billion but faces significant supply constraints of $4-8 billion in the June quarter driven by COVID-related disruptions in China and ongoing silicon shortages, while analysts pressed management on demand destruction, inflation impacts, and supply chain resilience.",
+  "delta_management_prepared_remarks_sentiment": -10.0,
+  "delta_management_responses_sentiment": -17.0,
+  "delta_management_overall_confidence": -16.0,
+  "delta_forward_guidance": -26.0,
+  "delta_analyst_pushback": 26.0,
+  "change_flags": "Prepared remarks sentiment decreased by 10.00; Management responses sentiment decreased by 17.00; Management overall confidence decreased by 16.00; Forward guidance sentiment decreased by 26.00; Analyst pushback level increased by 26.00",
+  "change_summary": "vs 2022 Q1: Prepared remarks sentiment decreased by 10.00; Management responses sentiment decreased by 17.00; Management overall confidence decreased by 16.00.",
+  "analyzed_at": "2026-04-14T01:08:12Z"
+}

@@ -1,0 +1,34 @@
+{
+  "ticker": "MSFT",
+  "company_name": "Microsoft Corporation",
+  "date": "2025-10-29",
+  "year": 2026,
+  "quarter": 1,
+  "industry": "Technology",
+  "management_prepared_remarks_sentiment": 85,
+  "management_responses_sentiment": 78,
+  "management_overall_confidence": 82,
+  "analyst_pushback_level": 68,
+  "forward_guidance_sentiment": 75,
+  "key_themes": [
+    "AI / copilot",
+    "cloud growth",
+    "capex / investment",
+    "revenue growth",
+    "consumption model"
+  ],
+  "notable_phrases": [
+    "very strong start to our fiscal year",
+    "demand is increasing. It is not increasing in just one place. It is increasing across many places",
+    "is there risk of workloads going elsewhere"
+  ],
+  "summary": "Microsoft reported strong AI-driven growth with record bookings and RPO, but faced pointed analyst questions about capacity constraints, customer concentration risk, OpenAI competitive dynamics, and whether massive infrastructure investments can be monetized.",
+  "delta_management_prepared_remarks_sentiment": -3.0,
+  "delta_management_responses_sentiment": -4.0,
+  "delta_management_overall_confidence": -5.0,
+  "delta_forward_guidance": -3.0,
+  "delta_analyst_pushback": 50.0,
+  "change_flags": "Analyst pushback level increased by 50.00",
+  "change_summary": "vs 2025 Q4: Analyst pushback level increased by 50.00.",
+  "analyzed_at": "2026-04-14T01:18:46Z"
+}
