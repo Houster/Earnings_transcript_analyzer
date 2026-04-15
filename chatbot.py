@@ -11,7 +11,7 @@ import pandas as pd
 import streamlit as st
 import plotly.graph_objects as go
 from collections import Counter
-from config            import ANTHROPIC_API_KEY, CSV_OUTPUT_PATH
+#from config            import ANTHROPIC_API_KEY, CSV_OUTPUT_PATH
 from main import initialize_data
 
 # ── Config ────────────────────────────────────────────────────────────────────
@@ -21,7 +21,7 @@ try:
     CSV_OUTPUT_PATH   = st.secrets.get("CSV_OUTPUT_PATH", "earnings_analysis.csv")
 except Exception:
     ANTHROPIC_API_KEY = ANTHROPIC_API_KEY
-    CSV_OUTPUT_PATH = CSV_OUTPUT_PATH
+    CSV_OUTPUT_PATH = "data/summaries.csv"
 
 
 

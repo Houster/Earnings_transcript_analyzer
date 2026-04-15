@@ -15,7 +15,7 @@ import csv
 import anthropic
 from datetime import datetime
 
-from config            import ANTHROPIC_API_KEY, CSV_OUTPUT_PATH
+#from config            import ANTHROPIC_API_KEY, CSV_OUTPUT_PATH
 from fetcher           import fetch_transcripts_multi_year
 from transcript_parser import parse_transcript
 from lm_scorer         import score_parsed_transcript
