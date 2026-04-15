@@ -38,7 +38,7 @@ if "data_initialized" not in st.session_state:
 
 # ── Page config ───────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="Earnings Tone Intelligence · Orik.AI",
+    page_title="Earnings Tone Intelligence · ORIK.AI",
     page_icon="◈",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -255,7 +255,7 @@ def show_login():
 
     st.markdown("""
     <div class="login-wrap">
-        <div class="login-logo">◈ Orik.AI</div>
+        <div class="login-logo">◈ ORIK.AI</div>
         <div class="login-sub">Earnings Tone Intelligence</div>
     """, unsafe_allow_html=True)
 
@@ -1170,7 +1170,7 @@ Score reference (all 0–100):
 
 
 with tab_chat:
-
+ 
     # Chat header with clear button inline
     chat_header_col, clear_col = st.columns([6, 1])
     with chat_header_col:
@@ -1179,22 +1179,22 @@ with tab_chat:
         if st.button("↺ Clear", key="clear_chat"):
             st.session_state.messages = []
             st.rerun()
-
+ 
     if filtered_df.empty:
         st.warning("No data loaded — adjust the sidebar filters before asking questions.")
     else:
         if "messages" not in st.session_state:
             st.session_state.messages = []
-
+ 
         # Render history
         for msg in st.session_state.messages:
             with st.chat_message(msg["role"]):
                 st.markdown(msg["content"])
-
+ 
         # Suggested queries (only shown before first message)
         if not st.session_state.messages:
             suggestions = []
-
+ 
             delta_col = "delta_management_overall_confidence"
             if delta_col in filtered_df.columns:
                 valid = filtered_df[filtered_df[delta_col].notna()]
@@ -1204,7 +1204,7 @@ with tab_chat:
                     suggestions.append(
                         f"What drove the confidence {direction} for {worst['ticker']} in {worst['year']} Q{worst['quarter']}?"
                     )
-
+ 
             if "key_themes" in filtered_df.columns:
                 all_t: list[str] = []
                 for _, row in filtered_df.iterrows():
@@ -1214,7 +1214,7 @@ with tab_chat:
                 if all_t:
                     top_theme = Counter(all_t).most_common(1)[0][0]
                     suggestions.append(f"Which companies discussed '{top_theme}' most, and how did their tone differ?")
-
+ 
             hedge_scan = []
             for _, row in filtered_df.iterrows():
                 ht = " ".join(filter(None, [str(row.get("notable_phrases","") or ""), str(row.get("summary","") or "")]))
@@ -1225,16 +1225,16 @@ with tab_chat:
                 hedge_scan.sort(key=lambda x: -x[3])
                 ht, hy, hq, _ = hedge_scan[0]
                 suggestions.append(f"{ht} had the highest hedging density in {hy} Q{hq} — what were they cautious about?")
-
+ 
             if len(selected_tickers) >= 2:
                 suggestions.append(
                     f"Compare guidance sentiment for {selected_tickers[0]} vs {selected_tickers[1]} "
                     f"against their industry benchmarks"
                 )
-
+ 
             if len(suggestions) < 4:
                 suggestions.append("Which companies show consistently above-industry confidence, and which are laggards?")
-
+ 
             st.markdown(
                 '<span style="font-family:\'IBM Plex Mono\',monospace;font-size:10px;'
                 'color:#4a5568;letter-spacing:0.1em;">START WITH A SUGGESTED QUERY</span>',
@@ -1242,25 +1242,23 @@ with tab_chat:
             )
             sug_cols = st.columns(2)
             for i, s in enumerate(suggestions[:4]):
+                # CHANGE 1: clicking a suggestion appends the user message and reruns —
+                # the run_chat_completion() call below then fires automatically on rerun.
                 if sug_cols[i % 2].button(s, key=f"sug_{i}"):
                     st.session_state.messages.append({"role": "user", "content": s})
                     st.rerun()
             st.markdown("<br>", unsafe_allow_html=True)
-
-        # Chat input
-        if user_input := st.chat_input("Query earnings tone data ..."):
-            st.session_state.messages.append({"role": "user", "content": user_input})
-            with st.chat_message("user"):
-                st.markdown(user_input)
-
-            # Rebuild data context on every turn so stale filter context is never sent
+ 
+        # ── Shared helper: build context + stream a response ──────────────
+        def run_chat_completion():
+            """Rebuild data context and stream the assistant reply for the latest user message."""
             bench_with_period = benchmarks.copy()
             if "period" not in bench_with_period.columns:
                 bench_with_period["period"] = (
                     bench_with_period["year"].astype(str) + " Q" + bench_with_period["quarter"].astype(str)
                 )
             data_context = build_data_context(filtered_df, bench_with_period)
-
+ 
             # Inject context into first user message of every API call
             api_messages = []
             for i, msg in enumerate(st.session_state.messages):
@@ -1271,24 +1269,38 @@ with tab_chat:
                         f"---\n\nQuestion: {content}"
                     )
                 api_messages.append({"role": msg["role"], "content": content})
-
+ 
             with st.chat_message("assistant"):
-                with st.spinner(""):
-                    try:
-                        client   = anthropic.Anthropic(api_key=st.secrets["ANTHROPIC_API_KEY"])
-                        response = client.messages.create(
-                            model      = "claude-sonnet-4-6",
-                            max_tokens = 1024,
-                            system     = SYSTEM_PROMPT,
-                            messages   = api_messages,
-                        )
-                        reply = response.content[0].text
-                    except anthropic.AuthenticationError:
-                        reply = "⚠ Authentication failed — check that your `ANTHROPIC_API_KEY` is set correctly in `st.secrets` or your environment."
-                    except anthropic.RateLimitError:
-                        reply = "⚠ Rate limit reached. Wait a moment and try again."
-                    except Exception as e:
-                        reply = f"⚠ Unexpected error: {e}"
-                st.markdown(reply)
-
+                try:
+                    client = anthropic.Anthropic(api_key=st.secrets["ANTHROPIC_API_KEY"])
+                    # CHANGE 2: stream the response token-by-token
+                    with client.messages.stream(
+                        model      = "claude-sonnet-4-6",
+                        max_tokens = 1024,
+                        system     = SYSTEM_PROMPT,
+                        messages   = api_messages,
+                    ) as stream:
+                        reply = st.write_stream(stream.text_stream)
+                except anthropic.AuthenticationError:
+                    reply = "⚠ Authentication failed — check that your `ANTHROPIC_API_KEY` is set correctly in `st.secrets` or your environment."
+                    st.markdown(reply)
+                except anthropic.RateLimitError:
+                    reply = "⚠ Rate limit reached. Wait a moment and try again."
+                    st.markdown(reply)
+                except Exception as e:
+                    reply = f"⚠ Unexpected error: {e}"
+                    st.markdown(reply)
+ 
             st.session_state.messages.append({"role": "assistant", "content": reply})
+ 
+        # CHANGE 1 (continued): after a suggestion rerun, the last message is a user message
+        # with no assistant reply yet — detect that and fire completion immediately.
+        if st.session_state.messages and st.session_state.messages[-1]["role"] == "user":
+            run_chat_completion()
+ 
+        # Normal chat input path
+        if user_input := st.chat_input("Query earnings tone data ..."):
+            st.session_state.messages.append({"role": "user", "content": user_input})
+            with st.chat_message("user"):
+                st.markdown(user_input)
+            run_chat_completion()
