@@ -38,7 +38,7 @@ if "data_initialized" not in st.session_state:
 
 # ── Page config ───────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="Earnings Tone Intelligence · ORIK.AI",
+    page_title="Earnings Tone Analyzer · ORIK.AI",
     page_icon="◈",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -49,8 +49,8 @@ st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap');
 
-html, body, [class*="css"] { font-family: 'IBM Plex Sans', sans-serif; }
-.stApp { background-color: #0d0f14; color: #e2e8f0; }
+html, body, [class*="css"] { font-family: 'IBM Plex Sans', sans-serif; font-size: 15px; }
+.stApp { background-color: #0d0f14; color: #f1f5f9; }
 [data-testid="stSidebar"] { background-color: #111318; border-right: 1px solid #1e2230; }
 
 /* ── Login page ── */
@@ -60,17 +60,17 @@ html, body, [class*="css"] { font-family: 'IBM Plex Sans', sans-serif; }
     border: 1px solid #1e2230; border-radius: 6px;
 }
 .login-logo {
-    font-family: 'IBM Plex Mono', monospace; font-size: 28px;
+    font-family: 'IBM Plex Mono', monospace; font-size: 29px;
     color: #4a9eff; letter-spacing: -0.02em; margin-bottom: 4px;
 }
 .login-sub {
-    font-family: 'IBM Plex Mono', monospace; font-size: 10px;
-    color: #4a5568; letter-spacing: 0.15em; text-transform: uppercase;
+    font-family: 'IBM Plex Mono', monospace; font-size: 12px;
+    color: #94a3b8; letter-spacing: 0.15em; text-transform: uppercase;
     margin-bottom: 36px;
 }
 .login-label {
-    font-family: 'IBM Plex Mono', monospace; font-size: 10px;
-    color: #64748b; letter-spacing: 0.12em; text-transform: uppercase;
+    font-family: 'IBM Plex Mono', monospace; font-size: 11px;
+    color: #94a3b8; letter-spacing: 0.12em; text-transform: uppercase;
     margin-bottom: 4px;
 }
 .login-divider {
@@ -84,16 +84,16 @@ html, body, [class*="css"] { font-family: 'IBM Plex Sans', sans-serif; }
     margin-bottom: 24px;
 }
 .app-header-logo {
-    font-family: 'IBM Plex Mono', monospace; font-size: 22px;
+    font-family: 'IBM Plex Mono', monospace; font-size: 23px;
     color: #4a9eff; letter-spacing: -0.02em;
 }
 .app-header-title {
-    font-family: 'IBM Plex Sans', sans-serif; font-weight: 300;
-    font-size: 20px; color: #e2e8f0; letter-spacing: -0.01em;
+    font-family: 'IBM Plex Sans', sans-serif; font-weight: 600;
+    font-size: 22px; color: #e2e8f0; letter-spacing: -0.01em;
 }
 .app-header-meta {
-    font-family: 'IBM Plex Mono', monospace; font-size: 10px;
-    color: #4a5568; letter-spacing: 0.08em; margin-left: auto;
+    font-family: 'IBM Plex Mono', monospace; font-size: 12px;
+    color: #94a3b8; letter-spacing: 0.08em; margin-left: auto;
 }
 
 /* ── Metrics ── */
@@ -102,14 +102,14 @@ html, body, [class*="css"] { font-family: 'IBM Plex Sans', sans-serif; }
     border-radius: 4px; padding: 16px !important;
 }
 [data-testid="metric-container"] label {
-    font-family: 'IBM Plex Mono', monospace; font-size: 10px !important;
-    letter-spacing: 0.12em; color: #64748b !important; text-transform: uppercase;
+    font-family: 'IBM Plex Mono', monospace; font-size: 12px !important;
+    letter-spacing: 0.10em; color: #cbd5e1 !important; text-transform: uppercase;
 }
 [data-testid="metric-container"] [data-testid="stMetricValue"] {
-    font-family: 'IBM Plex Mono', monospace; font-size: 28px !important; color: #e2e8f0 !important;
+    font-family: 'IBM Plex Mono', monospace; font-size: 29px !important; color: #e2e8f0 !important;
 }
 [data-testid="metric-container"] [data-testid="stMetricDelta"] {
-    font-family: 'IBM Plex Mono', monospace; font-size: 12px !important;
+    font-family: 'IBM Plex Mono', monospace; font-size: 13px !important;
 }
 
 /* ── Chat ── */
@@ -124,15 +124,15 @@ html, body, [class*="css"] { font-family: 'IBM Plex Sans', sans-serif; }
 
 /* ── Buttons ── */
 .stButton button {
-    background: #111318; border: 1px solid #2d3748; color: #94a3b8;
-    font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.05em;
+    background: #111318; border: 1px solid #2d3748; color: #cbd5e1;
+    font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.05em;
     border-radius: 4px; padding: 8px 12px; width: 100%; text-align: left; transition: all 0.15s ease;
 }
 .stButton button:hover { border-color: #4a9eff; color: #4a9eff; background: #0d1929; }
 
 /* ── Labels ── */
 .section-label {
-    font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.15em;
+    font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.15em;
     color: #4a9eff; text-transform: uppercase; margin-bottom: 12px;
     padding-bottom: 6px; border-bottom: 1px solid #1e2230;
 }
@@ -140,47 +140,47 @@ html, body, [class*="css"] { font-family: 'IBM Plex Sans', sans-serif; }
 /* ── Badges / tags ── */
 .flag-positive {
     display: inline-block; background: #0a2a1a; border: 1px solid #10b981; color: #10b981;
-    font-family: 'IBM Plex Mono', monospace; font-size: 10px; padding: 2px 8px; border-radius: 2px; margin: 2px;
+    font-family: 'IBM Plex Mono', monospace; font-size: 12px; padding: 2px 8px; border-radius: 2px; margin: 2px;
 }
 .flag-negative {
     display: inline-block; background: #2a0a0a; border: 1px solid #ef4444; color: #ef4444;
-    font-family: 'IBM Plex Mono', monospace; font-size: 10px; padding: 2px 8px; border-radius: 2px; margin: 2px;
+    font-family: 'IBM Plex Mono', monospace; font-size: 12px; padding: 2px 8px; border-radius: 2px; margin: 2px;
 }
 .flag-neutral {
-    display: inline-block; background: #151a27; border: 1px solid #4a5568; color: #94a3b8;
-    font-family: 'IBM Plex Mono', monospace; font-size: 10px; padding: 2px 8px; border-radius: 2px; margin: 2px;
+    display: inline-block; background: #151a27; border: 1px solid #94a3b8; color: #cbd5e1;
+    font-family: 'IBM Plex Mono', monospace; font-size: 12px; padding: 2px 8px; border-radius: 2px; margin: 2px;
 }
 .phrase-tag {
     display: inline-block; background: #0d1929; border: 1px solid #1e3a5f; color: #7ab8ff;
-    font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-style: italic;
+    font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-style: italic;
     padding: 3px 10px; border-radius: 2px; margin: 3px;
 }
 .industry-badge {
     display: inline-block; background: #1a1327; border: 1px solid #4c1d95; color: #a78bfa;
-    font-family: 'IBM Plex Mono', monospace; font-size: 10px; padding: 2px 10px; border-radius: 2px; margin: 2px;
+    font-family: 'IBM Plex Mono', monospace; font-size: 12px; padding: 2px 10px; border-radius: 2px; margin: 2px;
 }
 .theme-tag {
     display: inline-block; background: #0d1a14; border: 1px solid #1a4731; color: #6ee7b7;
-    font-family: 'IBM Plex Mono', monospace; font-size: 10px; padding: 2px 8px; border-radius: 2px; margin: 2px;
+    font-family: 'IBM Plex Mono', monospace; font-size: 12px; padding: 2px 8px; border-radius: 2px; margin: 2px;
 }
 .hedge-high {
     display: inline-block; background: #2a1a06; border: 1px solid #d97706; color: #fbbf24;
-    font-family: 'IBM Plex Mono', monospace; font-size: 10px; padding: 2px 8px; border-radius: 2px; margin: 2px;
+    font-family: 'IBM Plex Mono', monospace; font-size: 12px; padding: 2px 8px; border-radius: 2px; margin: 2px;
 }
 .hedge-low {
     display: inline-block; background: #0a1a10; border: 1px solid #166534; color: #4ade80;
-    font-family: 'IBM Plex Mono', monospace; font-size: 10px; padding: 2px 8px; border-radius: 2px; margin: 2px;
+    font-family: 'IBM Plex Mono', monospace; font-size: 12px; padding: 2px 8px; border-radius: 2px; margin: 2px;
 }
 .hedge-term {
     display: inline-block; background: #1c1209; border: 1px solid #92400e; color: #f59e0b;
-    font-family: 'IBM Plex Mono', monospace; font-size: 10px; font-style: italic;
+    font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-style: italic;
     padding: 2px 7px; border-radius: 2px; margin: 2px;
 }
 .user-pill {
     display: inline-flex; align-items: center; gap: 8px;
     background: #0d1929; border: 1px solid #1e3a5f;
     border-radius: 20px; padding: 4px 12px 4px 8px;
-    font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: #7ab8ff;
+    font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #7ab8ff;
 }
 .user-dot {
     width: 6px; height: 6px; border-radius: 50%;
@@ -190,16 +190,16 @@ html, body, [class*="css"] { font-family: 'IBM Plex Sans', sans-serif; }
 hr { border-color: #1e2230 !important; }
 h1 { font-family: 'IBM Plex Sans', sans-serif; font-weight: 300; color: #e2e8f0; letter-spacing: -0.02em; }
 h2 { font-family: 'IBM Plex Sans', sans-serif; font-weight: 400; color: #cbd5e1; }
-h3 { font-family: 'IBM Plex Sans', sans-serif; font-weight: 400; color: #94a3b8; }
+h3 { font-family: 'IBM Plex Sans', sans-serif; font-weight: 400; color: #cbd5e1; }
 
 /* ── Tabs ── */
 [data-testid="stTabs"] [role="tablist"] {
     border-bottom: 1px solid #1e2230; gap: 0;
 }
 [data-testid="stTabs"] [role="tab"] {
-    font-family: 'IBM Plex Mono', monospace; font-size: 10px;
+    font-family: 'IBM Plex Mono', monospace; font-size: 12px;
     letter-spacing: 0.12em; text-transform: uppercase;
-    color: #4a5568; padding: 10px 20px;
+    color: #94a3b8; padding: 10px 20px;
     border-bottom: 2px solid transparent;
 }
 [data-testid="stTabs"] [role="tab"][aria-selected="true"] {
@@ -211,7 +211,7 @@ h3 { font-family: 'IBM Plex Sans', sans-serif; font-weight: 400; color: #94a3b8;
 CHART_THEME = {
     "paper_bgcolor": "#0d0f14",
     "plot_bgcolor":  "#0d0f14",
-    "font":          {"family": "IBM Plex Mono", "color": "#94a3b8", "size": 11},
+    "font":          {"family": "IBM Plex Mono", "color": "#cbd5e1", "size": 12},
     "gridcolor":     "#1e2230",
 }
 
@@ -256,7 +256,7 @@ def show_login():
     st.markdown("""
     <div class="login-wrap">
         <div class="login-logo">◈ ORIK.AI</div>
-        <div class="login-sub">Earnings Tone Intelligence</div>
+        <div class="login-sub">Earnings Tone Analyzer</div>
     """, unsafe_allow_html=True)
 
     with st.form("login_form"):
@@ -296,7 +296,7 @@ def show_login():
 
     st.markdown("""
         <hr class="login-divider">
-        <div style="font-family:'IBM Plex Mono',monospace;font-size:9px;color:#2d3748;text-align:center;letter-spacing:0.1em;">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#2d3748;text-align:center;letter-spacing:0.1em;">
             CONFIDENTIAL · ORIK.AI · PERSONAL USE ONLY
         </div>
     </div>
@@ -307,9 +307,9 @@ def show_login():
 # Gate: show login if not authenticated
 # ─────────────────────────────────────────────────────────────────────────────
 
-if not st.session_state.get("logged_in"):
-    show_login()
-    st.stop()
+#if not st.session_state.get("logged_in"):
+#    show_login()
+#    st.stop()
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Hedging vocabulary
@@ -521,7 +521,7 @@ benchmarks = compute_industry_benchmarks(df, date_range)
 st.markdown(
     f'<div class="app-header">'
     f'<span class="app-header-logo">◈</span>'
-    f'<span class="app-header-title">Earnings Tone Intelligence</span>'
+    f'<span class="app-header-title">Earnings Tone Analyzer</span>'
     f'<span class="app-header-meta">AI-scored sentiment · Confidence · Guidance · Pushback · Industry benchmarks</span>'
     f'</div>',
     unsafe_allow_html=True,
@@ -567,7 +567,7 @@ with tab_overview:
 
                 with ticker_cols[i]:
                     st.markdown(
-                        f'<div style="font-family:\'IBM Plex Mono\',monospace;font-size:10px;'
+                        f'<div style="font-family:\'IBM Plex Mono\',monospace;font-size:11px;'
                         f'letter-spacing:0.1em;color:#4a9eff;margin-bottom:4px;">'
                         f'{ticker}  ·  {period}</div>'
                         f'<span class="industry-badge">{industry}</span>',
@@ -593,8 +593,8 @@ with tab_overview:
                         conf_vs   = last["management_overall_confidence"] - med_conf
                         guide_vs  = last["forward_guidance_sentiment"] - med_guide
                         st.markdown(
-                            f'<div style="font-family:\'IBM Plex Mono\',monospace;font-size:10px;'
-                            f'color:#4a5568;margin-top:8px;line-height:1.8;">'
+                            f'<div style="font-family:\'IBM Plex Mono\',monospace;font-size:11px;'
+                            f'color:#94a3b8;margin-top:8px;line-height:1.8;">'
                             f'Industry median<br>'
                             f'Conf: {med_conf:.0f} (<span style="color:{"#10b981" if conf_vs >= 0 else "#ef4444"}">{conf_vs:+.0f}</span>)<br>'
                             f'Guidance: {med_guide:.0f} (<span style="color:{"#10b981" if guide_vs >= 0 else "#ef4444"}">{guide_vs:+.0f}</span>)'
@@ -627,7 +627,7 @@ with tab_overview:
                         badge_html += f'<span class="flag-neutral">{flag}</span>'
                 st.markdown(
                     f'<div style="margin-bottom:8px;">'
-                    f'<span style="font-family:\'IBM Plex Mono\',monospace;font-size:11px;color:#64748b;margin-right:8px;">'
+                    f'<span style="font-family:\'IBM Plex Mono\',monospace;font-size:12px;color:#94a3b8;margin-right:8px;">'
                     f'{row["ticker"]}  {row["year"]} Q{row["quarter"]}</span>'
                     f'<span class="industry-badge">{row.get("industry","")}</span>'
                     f'<span style="margin-left:8px;">{badge_html}</span></div>',
@@ -648,7 +648,7 @@ with tab_overview:
                 phrase_html = "".join(f'<span class="phrase-tag">"{p}"</span>' for p in phrases)
                 st.markdown(
                     f'<div style="margin-bottom:10px;">'
-                    f'<span style="font-family:\'IBM Plex Mono\',monospace;font-size:10px;color:#4a5568;margin-right:10px;">'
+                    f'<span style="font-family:\'IBM Plex Mono\',monospace;font-size:11px;color:#94a3b8;margin-right:10px;">'
                     f'{row["ticker"]} {row["year"]} Q{row["quarter"]}</span>'
                     f'{phrase_html}</div>',
                     unsafe_allow_html=True,
@@ -714,7 +714,7 @@ def make_line_chart(company_df: pd.DataFrame, y_col: str, title: str) -> go.Figu
             fig.add_trace(go.Scatter(
                 x=ind_data["period"], y=ind_data[y_col],
                 mode="lines", name=f"{industry} median",
-                line=dict(color="#4a5568", width=1, dash="dash"),
+                line=dict(color="#94a3b8", width=2, dash="dot"),
                 hovertemplate=f"<b>{industry} median</b><br>%{{x}}<br>{title}: %{{y:.0f}}<extra></extra>",
             ))
     fig.update_layout(
@@ -864,8 +864,8 @@ with tab_themes_hedging:
 
                 # Per-ticker dominant themes
                 st.markdown(
-                    '<div style="font-family:\'IBM Plex Mono\',monospace;font-size:10px;'
-                    'color:#4a5568;letter-spacing:0.08em;margin-bottom:8px;">TOP THEMES BY COMPANY</div>',
+                    '<div style="font-family:\'IBM Plex Mono\',monospace;font-size:11px;'
+                    'color:#94a3b8;letter-spacing:0.08em;margin-bottom:8px;">TOP THEMES BY COMPANY</div>',
                     unsafe_allow_html=True,
                 )
                 ticker_theme_cols = st.columns(max(1, len(selected_tickers)))
@@ -876,7 +876,7 @@ with tab_themes_hedging:
                     top = [t for t, _ in Counter(t_themes["theme"]).most_common(6)]
                     with ticker_theme_cols[i]:
                         st.markdown(
-                            f'<div style="font-family:\'IBM Plex Mono\',monospace;font-size:10px;'
+                            f'<div style="font-family:\'IBM Plex Mono\',monospace;font-size:11px;'
                             f'color:#4a9eff;margin-bottom:6px;">{ticker}</div>'
                             + "".join(f'<span class="theme-tag">{t}</span>' for t in top),
                             unsafe_allow_html=True,
@@ -886,8 +886,8 @@ with tab_themes_hedging:
                 if len(all_periods) >= 2:
                     st.markdown("<br>", unsafe_allow_html=True)
                     st.markdown(
-                        '<div style="font-family:\'IBM Plex Mono\',monospace;font-size:10px;'
-                        'color:#4a5568;letter-spacing:0.08em;margin-bottom:10px;">'
+                        '<div style="font-family:\'IBM Plex Mono\',monospace;font-size:11px;'
+                        'color:#94a3b8;letter-spacing:0.08em;margin-bottom:10px;">'
                         'THEME SHIFTS — QUARTER-ON-QUARTER</div>',
                         unsafe_allow_html=True,
                     )
@@ -907,17 +907,17 @@ with tab_themes_hedging:
                         st.markdown(
                             f'<div style="margin-bottom:10px;padding:8px 10px;'
                             f'background:#0d0f14;border:1px solid #1e2230;border-radius:4px;">'
-                            f'<div style="font-family:\'IBM Plex Mono\',monospace;font-size:10px;'
+                            f'<div style="font-family:\'IBM Plex Mono\',monospace;font-size:11px;'
                             f'color:#4a9eff;margin-bottom:6px;">'
-                            f'{cur_period} <span style="color:#4a5568;">vs</span> {prev_period}</div>'
+                            f'{cur_period} <span style="color:#94a3b8;">vs</span> {prev_period}</div>'
                             f'{new_html}{dropped_html}'
                             f'</div>',
                             unsafe_allow_html=True,
                         )
                     if not any_shifts:
                         st.markdown(
-                            '<span style="font-family:\'IBM Plex Mono\',monospace;font-size:11px;'
-                            'color:#4a5568;">No quarter-on-quarter theme changes detected.</span>',
+                            '<span style="font-family:\'IBM Plex Mono\',monospace;font-size:12px;'
+                            'color:#94a3b8;">No quarter-on-quarter theme changes detected.</span>',
                             unsafe_allow_html=True,
                         )
 
@@ -971,8 +971,8 @@ with tab_themes_hedging:
                             "Hedge density: %{y:.2f} per 100 words<extra></extra>"
                         ),
                     ))
-                fig_hedge.add_hline(y=1.5, line_dash="dash", line_color="#4a5568", line_width=1,
-                                    annotation_text="Elevated", annotation_font=dict(color="#4a5568", size=9))
+                fig_hedge.add_hline(y=1.5, line_dash="dash", line_color="#94a3b8", line_width=1,
+                                    annotation_text="Elevated", annotation_font=dict(color="#94a3b8", size=9))
                 fig_hedge.add_hline(y=3.0, line_dash="dash", line_color="#7f1d1d", line_width=1,
                                     annotation_text="High", annotation_font=dict(color="#7f1d1d", size=9))
                 fig_hedge.update_layout(
@@ -989,8 +989,8 @@ with tab_themes_hedging:
                 st.plotly_chart(fig_hedge, use_container_width=True)
 
                 st.markdown(
-                    '<div style="font-family:\'IBM Plex Mono\',monospace;font-size:10px;'
-                    'color:#4a5568;letter-spacing:0.08em;margin-bottom:8px;">'
+                    '<div style="font-family:\'IBM Plex Mono\',monospace;font-size:11px;'
+                    'color:#94a3b8;letter-spacing:0.08em;margin-bottom:8px;">'
                     'FLAGGED QUARTERS — HEDGING TERMS DETECTED</div>',
                     unsafe_allow_html=True,
                 )
@@ -1006,8 +1006,8 @@ with tab_themes_hedging:
                         f'<div style="margin-bottom:12px;padding:10px;background:#0d0f14;'
                         f'border:1px solid #1e2230;border-radius:4px;">'
                         f'<div style="margin-bottom:6px;">'
-                        f'<span style="font-family:\'IBM Plex Mono\',monospace;font-size:11px;'
-                        f'color:#64748b;margin-right:8px;">{hrow["ticker"]}  {hrow["period"]}</span>'
+                        f'<span style="font-family:\'IBM Plex Mono\',monospace;font-size:12px;'
+                        f'color:#94a3b8;margin-right:8px;">{hrow["ticker"]}  {hrow["period"]}</span>'
                         f'<span class="industry-badge">{hrow["industry"]}</span>'
                         f'<span class="{density_cls}" style="margin-left:8px;">{density_label}</span>'
                         f'</div>'
@@ -1018,7 +1018,7 @@ with tab_themes_hedging:
                     )
             else:
                 st.markdown(
-                    '<span style="font-family:\'IBM Plex Mono\',monospace;font-size:11px;color:#4a5568;">'
+                    '<span style="font-family:\'IBM Plex Mono\',monospace;font-size:12px;color:#94a3b8;">'
                     'No hedging language detected in selected quarters.</span>',
                     unsafe_allow_html=True,
                 )
@@ -1236,8 +1236,8 @@ with tab_chat:
                 suggestions.append("Which companies show consistently above-industry confidence, and which are laggards?")
  
             st.markdown(
-                '<span style="font-family:\'IBM Plex Mono\',monospace;font-size:10px;'
-                'color:#4a5568;letter-spacing:0.1em;">START WITH A SUGGESTED QUERY</span>',
+                '<span style="font-family:\'IBM Plex Mono\',monospace;font-size:11px;'
+                'color:#94a3b8;letter-spacing:0.1em;">START WITH A SUGGESTED QUERY</span>',
                 unsafe_allow_html=True,
             )
             sug_cols = st.columns(2)
