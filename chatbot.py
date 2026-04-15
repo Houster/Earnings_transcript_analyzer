@@ -21,14 +21,15 @@ try:
     CSV_OUTPUT_PATH   = st.secrets.get("CSV_OUTPUT_PATH", "earnings_analysis.csv")
 except Exception:
     ANTHROPIC_API_KEY = ANTHROPIC_API_KEY
-    CSV_OUTPUT_PATH = "data/summaries.csv"
+    CSV_OUTPUT_PATH = "results/earnings_analysis.csv"
 
 
 
 
-# Run data pipeline once
+# Run data pipeline once (only if data file missing)
 if "data_initialized" not in st.session_state:
-    initialize_data()
+    if not os.path.exists(CSV_OUTPUT_PATH):
+        initialize_data()
     st.session_state["data_initialized"] = True
 
 
