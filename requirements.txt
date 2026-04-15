@@ -6,3 +6,5 @@ pymupdf>=1.24.0
 plotly>=5.0.0
 earningscall>=2.0.0
 python-dotenv>=1.0.0
+gspread>=5.0.0
+google-auth>=2.0.0

@@ -10,6 +10,8 @@ import anthropic
 import pandas as pd
 import streamlit as st
 import plotly.graph_objects as go
+import gspread
+from google.oauth2.service_account import Credentials
 from collections import Counter
 from config            import ANTHROPIC_API_KEY, CSV_OUTPUT_PATH
 from main import initialize_data
@@ -221,6 +223,26 @@ TICKER_COLORS = [
 # Login page
 # ─────────────────────────────────────────────────────────────────────────────
 
+def save_to_google_sheets(name: str, email: str) -> bool:
+    try:
+        # Get credentials from secrets
+        creds_dict = st.secrets["google_service_account"]
+        creds = Credentials.from_service_account_info(creds_dict, scopes=["https://www.googleapis.com/auth/spreadsheets"])
+        client = gspread.authorize(creds)
+        
+        # Open the sheet
+        sheet_id = st.secrets["google_sheet_id"]
+        sheet = client.open_by_key(sheet_id).sheet1  # Assuming first sheet
+        
+        # Append row
+        timestamp = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
+        sheet.append_row([name, email, timestamp])
+        return True
+    except Exception as e:
+        st.error(f"Failed to save signup: {e}")
+        return False
+
+
 def show_login():
     # Hide sidebar on login page
     st.markdown("""
@@ -263,10 +285,13 @@ def show_login():
             elif not email or "@" not in email:
                 st.error("Please enter a valid email address.")
             else:
-                st.session_state["user_name"]  = name
-                st.session_state["user_email"] = email
-                st.session_state["logged_in"]  = True
-                st.rerun()
+                # Save to Google Sheets
+                if save_to_google_sheets(name, email):
+                    st.session_state["user_name"]  = name
+                    st.session_state["user_email"] = email
+                    st.session_state["logged_in"]  = True
+                    st.rerun()
+                # If save fails, error is shown in the function
 
     st.markdown("""
         <hr class="login-divider">
