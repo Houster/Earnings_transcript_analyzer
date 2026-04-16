@@ -1,0 +1,34 @@
+{
+  "ticker": "MSFT",
+  "company_name": "Microsoft Corporation",
+  "date": "2019-07-18",
+  "year": 2019,
+  "quarter": 4,
+  "industry": "Technology",
+  "management_prepared_remarks_sentiment": 82,
+  "management_responses_sentiment": 75,
+  "management_overall_confidence": 78,
+  "analyst_pushback_level": 28,
+  "forward_guidance_sentiment": 72,
+  "key_themes": [
+    "cloud growth",
+    "digital transformation",
+    "developer platform",
+    "security",
+    "margins / efficiency"
+  ],
+  "notable_phrases": [
+    "strong finish to a record fiscal year",
+    "commercial cloud business is the largest in the world",
+    "incredibly strong footprint inside existing enterprises"
+  ],
+  "summary": "Microsoft reported record fiscal year results with strong cloud momentum, developer platform expansion, and confident outlook despite some margin pressure from Azure growth investments.",
+  "delta_management_prepared_remarks_sentiment": 0.0,
+  "delta_management_responses_sentiment": -3.0,
+  "delta_management_overall_confidence": -7.0,
+  "delta_forward_guidance": 0.0,
+  "delta_analyst_pushback": 3.0,
+  "change_flags": "no material changes",
+  "change_summary": "No material changes detected vs 2019 Q3; scores broadly stable QoQ.",
+  "analyzed_at": "2026-04-16T01:40:12Z"
+}

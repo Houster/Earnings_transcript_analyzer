@@ -1,0 +1,34 @@
+{
+  "ticker": "MSFT",
+  "company_name": "Microsoft Corporation",
+  "date": "2020-07-22",
+  "year": 2020,
+  "quarter": 4,
+  "industry": "Technology",
+  "management_prepared_remarks_sentiment": 78,
+  "management_responses_sentiment": 72,
+  "management_overall_confidence": 75,
+  "analyst_pushback_level": 35,
+  "forward_guidance_sentiment": 68,
+  "key_themes": [
+    "cloud growth",
+    "digital transformation",
+    "developer platform",
+    "consumption model",
+    "margins / efficiency"
+  ],
+  "notable_phrases": [
+    "digital tech intensity is key to business resilience",
+    "Organizations that build their own digital capability will recover faster and emerge from this crisis stronger",
+    "commercial cloud, which surpassed $50 billion in revenue for the first time, up 36% year over year"
+  ],
+  "summary": "Microsoft reported record FY2020 results with commercial cloud surpassing $50 billion, emphasizing digital transformation acceleration and business resilience despite macro headwinds, while management expressed confidence in customer commitment and multi-cloud expansion.",
+  "delta_management_prepared_remarks_sentiment": 0.0,
+  "delta_management_responses_sentiment": 0.0,
+  "delta_management_overall_confidence": -7.0,
+  "delta_forward_guidance": 0.0,
+  "delta_analyst_pushback": 0.0,
+  "change_flags": "no material changes",
+  "change_summary": "No material changes detected vs 2020 Q3; scores broadly stable QoQ.",
+  "analyzed_at": "2026-04-16T01:40:37Z"
+}

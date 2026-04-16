@@ -1,0 +1,34 @@
+{
+  "ticker": "AAPL",
+  "company_name": "Apple Inc.",
+  "date": "2019-04-30",
+  "year": 2019,
+  "quarter": 2,
+  "industry": "Technology",
+  "management_prepared_remarks_sentiment": 68,
+  "management_responses_sentiment": 62,
+  "management_overall_confidence": 58,
+  "analyst_pushback_level": 42,
+  "forward_guidance_sentiment": 62,
+  "key_themes": [
+    "services growth",
+    "China recovery",
+    "pricing actions",
+    "installed base expansion",
+    "new services launch"
+  ],
+  "notable_phrases": [
+    "we feel positive about our trajectory",
+    "encouraging trend",
+    "we certainly feel a lot better than we did 90 days ago"
+  ],
+  "summary": "Apple reports mixed results with iPhone declines offset by record services and iPad growth, emphasizing improving China trends through pricing adjustments and expressing confidence in new services launches.",
+  "delta_management_prepared_remarks_sentiment": 33.0,
+  "delta_management_responses_sentiment": 7.0,
+  "delta_management_overall_confidence": -2.0,
+  "delta_forward_guidance": 22.0,
+  "delta_analyst_pushback": -33.0,
+  "change_flags": "Prepared remarks sentiment increased by 33.00; Forward guidance sentiment increased by 22.00; Analyst pushback level decreased by 33.00",
+  "change_summary": "vs 2019 Q1: Prepared remarks sentiment increased by 33.00; Forward guidance sentiment increased by 22.00; Analyst pushback level decreased by 33.00.",
+  "analyzed_at": "2026-04-16T01:41:55Z"
+}

@@ -1,0 +1,34 @@
+{
+  "ticker": "AAPL",
+  "company_name": "Apple Inc.",
+  "date": "2018-11-01",
+  "year": 2018,
+  "quarter": 4,
+  "industry": "Technology",
+  "management_prepared_remarks_sentiment": 78,
+  "management_responses_sentiment": 58,
+  "management_overall_confidence": 72,
+  "analyst_pushback_level": 68,
+  "forward_guidance_sentiment": 55,
+  "key_themes": [
+    "revenue growth",
+    "guidance / outlook",
+    "macro / headwinds",
+    "international expansion",
+    "hardware / devices"
+  ],
+  "notable_phrases": [
+    "strongest revenue and earnings in Apple's history",
+    "some level of uncertainty at the macroeconomic level in some emerging markets",
+    "unit of sale per se becomes less relevant"
+  ],
+  "summary": "Apple reported record fiscal 2018 results with strong iPhone and services growth, but management cited emerging market currency headwinds and reduced unit disclosure transparency while providing cautious forward guidance amid macro uncertainty.",
+  "delta_management_prepared_remarks_sentiment": -4.0,
+  "delta_management_responses_sentiment": -14.0,
+  "delta_management_overall_confidence": -6.0,
+  "delta_forward_guidance": -10.0,
+  "delta_analyst_pushback": 26.0,
+  "change_flags": "Management responses sentiment decreased by 14.00; Forward guidance sentiment decreased by 10.00; Analyst pushback level increased by 26.00",
+  "change_summary": "vs 2018 Q3: Management responses sentiment decreased by 14.00; Forward guidance sentiment decreased by 10.00; Analyst pushback level increased by 26.00.",
+  "analyzed_at": "2026-04-16T01:41:43Z"
+}

@@ -11,6 +11,6 @@ load_dotenv()
 
 
 def initialize_data():
-    results = run_analysis_multi_year(ticker="MSFT", years=1)
+    results = run_analysis_multi_year(ticker="MSFT", years=10)
     return results
 

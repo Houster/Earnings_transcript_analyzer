@@ -1,0 +1,34 @@
+{
+  "ticker": "AAPL",
+  "company_name": "Apple Inc.",
+  "date": "2018-07-31",
+  "year": 2018,
+  "quarter": 3,
+  "industry": "Technology",
+  "management_prepared_remarks_sentiment": 82,
+  "management_responses_sentiment": 72,
+  "management_overall_confidence": 78,
+  "analyst_pushback_level": 42,
+  "forward_guidance_sentiment": 65,
+  "key_themes": [
+    "revenue growth",
+    "services growth",
+    "hardware / devices",
+    "margins / efficiency",
+    "international expansion"
+  ],
+  "notable_phrases": [
+    "we couldn't be happier with how things are going",
+    "seventh consecutive quarter of accelerating growth",
+    "customers want innovative products"
+  ],
+  "summary": "Apple reported record Q3 results with strong iPhone and services growth, expressing high confidence in momentum despite tariff concerns and foreign exchange headwinds affecting margin guidance.",
+  "delta_management_prepared_remarks_sentiment": null,
+  "delta_management_responses_sentiment": null,
+  "delta_management_overall_confidence": null,
+  "delta_forward_guidance": null,
+  "delta_analyst_pushback": null,
+  "change_flags": "first quarter — no prior period",
+  "change_summary": "No prior quarter available for comparison.",
+  "analyzed_at": "2026-04-16T01:41:37Z"
+}

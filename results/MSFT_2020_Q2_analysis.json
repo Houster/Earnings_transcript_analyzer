@@ -1,0 +1,34 @@
+{
+  "ticker": "MSFT",
+  "company_name": "Microsoft Corporation",
+  "date": "2020-01-29",
+  "year": 2020,
+  "quarter": 2,
+  "industry": "Technology",
+  "management_prepared_remarks_sentiment": 78,
+  "management_responses_sentiment": 72,
+  "management_overall_confidence": 82,
+  "analyst_pushback_level": 42,
+  "forward_guidance_sentiment": 68,
+  "key_themes": [
+    "cloud growth",
+    "developer platform",
+    "margins / efficiency",
+    "digital transformation",
+    "security"
+  ],
+  "notable_phrases": [
+    "another strong quarter with double-digit top and bottom line growth",
+    "we have more data center regions than any other cloud provider",
+    "I feel very good about the execution of each service to their own gross margin goals"
+  ],
+  "summary": "Microsoft reported strong cloud-driven growth with Azure acceleration, expanding developer tools ecosystem, and improving margins despite mix shifts, while management expressed high confidence in long-term positioning across infrastructure, security, and AI capabilities.",
+  "delta_management_prepared_remarks_sentiment": 0.0,
+  "delta_management_responses_sentiment": 0.0,
+  "delta_management_overall_confidence": 0.0,
+  "delta_forward_guidance": 0.0,
+  "delta_analyst_pushback": 0.0,
+  "change_flags": "no material changes",
+  "change_summary": "No material changes detected vs 2020 Q1; scores broadly stable QoQ.",
+  "analyzed_at": "2026-04-16T01:40:26Z"
+}

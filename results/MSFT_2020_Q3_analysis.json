@@ -1,0 +1,34 @@
+{
+  "ticker": "MSFT",
+  "company_name": "Microsoft Corporation",
+  "date": "2020-04-29",
+  "year": 2020,
+  "quarter": 3,
+  "industry": "Technology",
+  "management_prepared_remarks_sentiment": 78,
+  "management_responses_sentiment": 72,
+  "management_overall_confidence": 82,
+  "analyst_pushback_level": 35,
+  "forward_guidance_sentiment": 68,
+  "key_themes": [
+    "digital transformation",
+    "cloud growth",
+    "remote work adoption",
+    "supply chain",
+    "capex / investment"
+  ],
+  "notable_phrases": [
+    "two years worth of digital transformation in two months",
+    "Teams now has more than 75 million daily active users",
+    "we don't go in there with the mindset of what does it mean for our revenue"
+  ],
+  "summary": "Microsoft reported strong cloud and Teams growth driven by accelerated digital transformation during COVID-19, with management expressing high confidence in long-term structural changes despite near-term supply chain constraints and a customer-first monetization approach.",
+  "delta_management_prepared_remarks_sentiment": 0.0,
+  "delta_management_responses_sentiment": 0.0,
+  "delta_management_overall_confidence": 0.0,
+  "delta_forward_guidance": 0.0,
+  "delta_analyst_pushback": -7.0,
+  "change_flags": "no material changes",
+  "change_summary": "No material changes detected vs 2020 Q2; scores broadly stable QoQ.",
+  "analyzed_at": "2026-04-16T01:40:32Z"
+}

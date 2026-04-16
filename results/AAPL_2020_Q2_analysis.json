@@ -1,0 +1,34 @@
+{
+  "ticker": "AAPL",
+  "company_name": "Apple Inc.",
+  "date": "2020-04-30",
+  "year": 2020,
+  "quarter": 2,
+  "industry": "Technology",
+  "management_prepared_remarks_sentiment": 72,
+  "management_responses_sentiment": 65,
+  "management_overall_confidence": 68,
+  "analyst_pushback_level": 35,
+  "forward_guidance_sentiment": 58,
+  "key_themes": [
+    "macro / headwinds",
+    "supply chain",
+    "hardware / devices",
+    "revenue growth",
+    "capex / investment"
+  ],
+  "notable_phrases": [
+    "Apple grew during the quarter",
+    "we've seen an uptick really across the board",
+    "we manage the company for the long term"
+  ],
+  "summary": "Apple reported record services and wearables revenue amid COVID-19 challenges, emphasizing resilience through supply chain recovery, product launches, and long-term investment commitment despite near-term macro headwinds.",
+  "delta_management_prepared_remarks_sentiment": -13.0,
+  "delta_management_responses_sentiment": 0.0,
+  "delta_management_overall_confidence": -7.0,
+  "delta_forward_guidance": -2.0,
+  "delta_analyst_pushback": 0.0,
+  "change_flags": "Prepared remarks sentiment decreased by 13.00",
+  "change_summary": "vs 2020 Q1: Prepared remarks sentiment decreased by 13.00.",
+  "analyzed_at": "2026-04-16T01:42:16Z"
+}

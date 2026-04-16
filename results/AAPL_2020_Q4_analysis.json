@@ -1,0 +1,34 @@
+{
+  "ticker": "AAPL",
+  "company_name": "Apple Inc.",
+  "date": "2020-10-29",
+  "year": 2020,
+  "quarter": 4,
+  "industry": "Technology",
+  "management_prepared_remarks_sentiment": 72,
+  "management_responses_sentiment": 75,
+  "management_overall_confidence": 78,
+  "analyst_pushback_level": 58,
+  "forward_guidance_sentiment": 70,
+  "key_themes": [
+    "revenue growth",
+    "5G opportunity",
+    "international expansion",
+    "services growth",
+    "supply chain"
+  ],
+  "notable_phrases": [
+    "very bullish on this cycle",
+    "once in a decade opportunity with 5G",
+    "strongest lineup we've ever had by far"
+  ],
+  "summary": "Apple management expressed strong confidence in iPhone 12 cycle driven by 5G adoption, record services performance, and China momentum despite later launch timing and COVID-19 headwinds.",
+  "delta_management_prepared_remarks_sentiment": 0.0,
+  "delta_management_responses_sentiment": 7.0,
+  "delta_management_overall_confidence": 7.0,
+  "delta_forward_guidance": 5.0,
+  "delta_analyst_pushback": 16.0,
+  "change_flags": "Analyst pushback level increased by 16.00",
+  "change_summary": "vs 2020 Q3: Analyst pushback level increased by 16.00.",
+  "analyzed_at": "2026-04-16T01:42:27Z"
+}

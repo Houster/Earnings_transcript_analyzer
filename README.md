@@ -45,14 +45,6 @@ python main.py
 
 This will analyze the last year's earnings calls for Microsoft (MSFT) by default. Modify `main.py` to change tickers or time periods.
 
-### Batch Analysis
-
-Uncomment the batch section in `main.py` to analyze multiple companies:
-```python
-tickers = ["AAPL", "MSFT", "NVDA"]
-for ticker in tickers:
-    run_analysis_multi_year(ticker=ticker, years=5)
-```
 
 ### Interactive Chatbot
 
@@ -132,9 +124,6 @@ Each analysis includes:
 4. Add tests if applicable
 5. Submit a pull request
 
-## License
-
-MIT License - see LICENSE file for details
 
 ## Contact
 

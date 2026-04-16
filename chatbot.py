@@ -307,9 +307,9 @@ def show_login():
 # Gate: show login if not authenticated
 # ─────────────────────────────────────────────────────────────────────────────
 
-if not st.session_state.get("logged_in"):
-    show_login()
-    st.stop()
+#if not st.session_state.get("logged_in"):
+#    show_login()
+#    st.stop()
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Hedging vocabulary
