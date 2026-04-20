@@ -55,27 +55,68 @@ html, body, [class*="css"] { font-family: 'IBM Plex Sans', sans-serif; font-size
 
 /* ── Login page ── */
 .login-wrap {
-    max-width: 420px; margin: 80px auto 0 auto;
-    padding: 48px 40px; background: #0c1527;
-    border: 1px solid #1a2d50; border-radius: 6px;
+    max-width: 440px; margin: 10vh auto 0 auto;
+    background: #0c1527; border: 1px solid #4a9eff;
+    border-radius: 4px; overflow: hidden;
+    box-shadow: 0 24px 64px rgba(0,0,0,0.7), 0 0 0 1px rgba(74,158,255,0.08);
 }
-.login-logo {
-    font-family: 'IBM Plex Mono', monospace; font-size: 29px;
-    color: #4a9eff; letter-spacing: -0.02em; margin-bottom: 4px;
+.login-accent {
+    height: 3px;
+    background: linear-gradient(90deg, #1d4ed8 0%, #4a9eff 55%, #93c5fd 100%);
 }
-.login-sub {
-    font-family: 'IBM Plex Mono', monospace; font-size: 12px;
-    color: #94a3b8; letter-spacing: 0.15em; text-transform: uppercase;
-    margin-bottom: 36px;
+.login-header {
+    padding: 32px 40px 28px; border-bottom: 1px solid #1a2d50;
+    display: flex; align-items: center; gap: 18px;
+}
+.login-mark {
+    font-family: 'IBM Plex Mono', monospace; font-size: 34px;
+    color: #4a9eff; line-height: 1; flex-shrink: 0;
+}
+.login-brand-name {
+    font-family: 'IBM Plex Mono', monospace; font-size: 18px;
+    font-weight: 500; color: #e2e8f0; letter-spacing: 0.06em;
+}
+.login-brand-product {
+    font-family: 'IBM Plex Sans', sans-serif; font-size: 11px;
+    color: #4a9eff; letter-spacing: 0.14em; text-transform: uppercase; margin-top: 4px;
+}
+.login-form-area {
+    padding: 30px 40px 36px;
+}
+.login-access-label {
+    font-family: 'IBM Plex Mono', monospace; font-size: 10px;
+    color: #4a6fa5; letter-spacing: 0.22em; text-transform: uppercase;
+    margin-bottom: 22px;
 }
 .login-label {
     font-family: 'IBM Plex Mono', monospace; font-size: 11px;
-    color: #94a3b8; letter-spacing: 0.12em; text-transform: uppercase;
-    margin-bottom: 4px;
+    color: #7a93b8; letter-spacing: 0.12em; text-transform: uppercase;
+    margin-bottom: 6px;
 }
-.login-divider {
-    border: none; border-top: 1px solid #1a2d50; margin: 28px 0;
+.login-footer {
+    padding: 13px 40px; border-top: 1px solid #1a2d50; background: #07101e;
 }
+.login-footer-text {
+    font-family: 'IBM Plex Mono', monospace; font-size: 10px;
+    color: #233a5c; text-align: center; letter-spacing: 0.14em; text-transform: uppercase;
+}
+/* ── Login input + button overrides ── */
+[data-testid="stTextInput"] input {
+    background: #060c1a !important; border: 1px solid #1a2d50 !important;
+    border-radius: 3px !important; color: #e2e8f0 !important;
+    font-family: 'IBM Plex Sans', sans-serif !important; font-size: 14px !important;
+}
+[data-testid="stTextInput"] input:focus {
+    border-color: #4a9eff !important; box-shadow: 0 0 0 2px rgba(74,158,255,0.12) !important;
+}
+[data-testid="stFormSubmitButton"] button {
+    background: #1d4ed8 !important; border: none !important; color: #ffffff !important;
+    font-family: 'IBM Plex Mono', monospace !important; font-size: 12px !important;
+    letter-spacing: 0.14em !important; text-transform: uppercase !important;
+    border-radius: 3px !important; padding: 12px !important; transition: background 0.15s !important;
+}
+[data-testid="stFormSubmitButton"] button:hover { background: #2563eb !important; }
+[data-testid="stForm"] { border: none !important; padding: 0 !important; background: transparent !important; }
 
 /* ── Branded header ── */
 .app-header {
@@ -255,8 +296,14 @@ def show_login():
 
     st.markdown("""
     <div class="login-wrap">
-        <div class="login-logo">◈ ORIK.AI</div>
-        <div class="login-sub">Earnings Tone Analyzer</div>
+        <div class="login-accent"></div>
+        <div class="login-header">
+            <div class="login-mark">◈</div>
+            <div>
+                <div class="login-brand-name">ORIK.AI</div>
+                <div class="login-brand-product">Earnings Tone Analyzer</div>
+            </div>
+        </div>
     """, unsafe_allow_html=True)
 
     with st.form("login_form"):
@@ -266,16 +313,16 @@ def show_login():
             label_visibility="collapsed"
         )
 
-        st.markdown("<div style='height:12px'></div>", unsafe_allow_html=True)
-        st.markdown('<div class="login-label">Work Email</div>', unsafe_allow_html=True)
+        st.markdown("<div style='height:14px'></div>", unsafe_allow_html=True)
+        st.markdown('<div class="login-label">Email</div>', unsafe_allow_html=True)
         email = st.text_input(
             "Email", placeholder="e.g. sarah@fundname.com",
             label_visibility="collapsed"
         )
 
-        st.markdown("<div style='height:20px'></div>", unsafe_allow_html=True)
+        st.markdown("<div style='height:22px'></div>", unsafe_allow_html=True)
         submitted = st.form_submit_button(
-            "Enter →", use_container_width=True
+            "Request Access", use_container_width=True
         )
 
         if submitted:
@@ -294,13 +341,10 @@ def show_login():
                     st.rerun()
                 # If save fails, error is shown in the function
 
-    st.markdown("""
-        <hr class="login-divider">
-        <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#1e3660;text-align:center;letter-spacing:0.1em;">
-            CONFIDENTIAL · ORIK.AI · PERSONAL USE ONLY
-        </div>
-    </div>
-    """, unsafe_allow_html=True)
+    st.markdown(
+        '<div class="login-footer"><div class="login-footer-text">Confidential &nbsp;·&nbsp; ORIK.AI &nbsp;·&nbsp; Authorized Use Only</div></div>',
+        unsafe_allow_html=True
+    )
 
 
 # ─────────────────────────────────────────────────────────────────────────────
