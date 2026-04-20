@@ -1,7 +1,7 @@
-# chatbot.py
+# app.py
 # ------------------------------------------------------------
 # Streamlit chatbot for earnings call tone analysis.
-# Run:  streamlit run chatbot.py
+# Run:  streamlit run app.py
 # ------------------------------------------------------------
 
 import os
@@ -50,14 +50,14 @@ st.markdown("""
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap');
 
 html, body, [class*="css"] { font-family: 'IBM Plex Sans', sans-serif; font-size: 15px; }
-.stApp { background-color: #0d0f14; color: #f1f5f9; }
-[data-testid="stSidebar"] { background-color: #111318; border-right: 1px solid #1e2230; }
+.stApp { background-color: #060c1a; color: #f1f5f9; }
+[data-testid="stSidebar"] { background-color: #0c1527; border-right: 1px solid #1a2d50; }
 
 /* ── Login page ── */
 .login-wrap {
     max-width: 420px; margin: 80px auto 0 auto;
-    padding: 48px 40px; background: #111318;
-    border: 1px solid #1e2230; border-radius: 6px;
+    padding: 48px 40px; background: #0c1527;
+    border: 1px solid #1a2d50; border-radius: 6px;
 }
 .login-logo {
     font-family: 'IBM Plex Mono', monospace; font-size: 29px;
@@ -74,13 +74,13 @@ html, body, [class*="css"] { font-family: 'IBM Plex Sans', sans-serif; font-size
     margin-bottom: 4px;
 }
 .login-divider {
-    border: none; border-top: 1px solid #1e2230; margin: 28px 0;
+    border: none; border-top: 1px solid #1a2d50; margin: 28px 0;
 }
 
 /* ── Branded header ── */
 .app-header {
     display: flex; align-items: baseline; gap: 14px;
-    padding-bottom: 16px; border-bottom: 1px solid #1e2230;
+    padding-bottom: 16px; border-bottom: 1px solid #1a2d50;
     margin-bottom: 24px;
 }
 .app-header-logo {
@@ -98,7 +98,7 @@ html, body, [class*="css"] { font-family: 'IBM Plex Sans', sans-serif; font-size
 
 /* ── Metrics ── */
 [data-testid="metric-container"] {
-    background: #111318; border: 1px solid #1e2230;
+    background: #0c1527; border: 1px solid #1a2d50;
     border-radius: 4px; padding: 16px !important;
 }
 [data-testid="metric-container"] label {
@@ -114,27 +114,27 @@ html, body, [class*="css"] { font-family: 'IBM Plex Sans', sans-serif; font-size
 
 /* ── Chat ── */
 [data-testid="stChatMessage"] {
-    background: #111318 !important; border: 1px solid #1e2230;
+    background: #0c1527 !important; border: 1px solid #1a2d50;
     border-radius: 4px; margin-bottom: 8px;
 }
 [data-testid="stChatInput"] {
-    background: #111318 !important; border: 1px solid #2d3748 !important;
+    background: #0c1527 !important; border: 1px solid #1e3660 !important;
     border-radius: 4px !important; font-family: 'IBM Plex Sans', sans-serif !important;
 }
 
 /* ── Buttons ── */
 .stButton button {
-    background: #111318; border: 1px solid #2d3748; color: #cbd5e1;
+    background: #0c1527; border: 1px solid #1e3660; color: #cbd5e1;
     font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.05em;
     border-radius: 4px; padding: 8px 12px; width: 100%; text-align: left; transition: all 0.15s ease;
 }
-.stButton button:hover { border-color: #4a9eff; color: #4a9eff; background: #0d1929; }
+.stButton button:hover { border-color: #4a9eff; color: #4a9eff; background: #091422; }
 
 /* ── Labels ── */
 .section-label {
     font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.15em;
     color: #4a9eff; text-transform: uppercase; margin-bottom: 12px;
-    padding-bottom: 6px; border-bottom: 1px solid #1e2230;
+    padding-bottom: 6px; border-bottom: 1px solid #1a2d50;
 }
 
 /* ── Badges / tags ── */
@@ -147,11 +147,11 @@ html, body, [class*="css"] { font-family: 'IBM Plex Sans', sans-serif; font-size
     font-family: 'IBM Plex Mono', monospace; font-size: 12px; padding: 2px 8px; border-radius: 2px; margin: 2px;
 }
 .flag-neutral {
-    display: inline-block; background: #151a27; border: 1px solid #94a3b8; color: #cbd5e1;
+    display: inline-block; background: #0e1a35; border: 1px solid #94a3b8; color: #cbd5e1;
     font-family: 'IBM Plex Mono', monospace; font-size: 12px; padding: 2px 8px; border-radius: 2px; margin: 2px;
 }
 .phrase-tag {
-    display: inline-block; background: #0d1929; border: 1px solid #1e3a5f; color: #7ab8ff;
+    display: inline-block; background: #091422; border: 1px solid #1a3560; color: #6aaeff;
     font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-style: italic;
     padding: 3px 10px; border-radius: 2px; margin: 3px;
 }
@@ -178,23 +178,23 @@ html, body, [class*="css"] { font-family: 'IBM Plex Sans', sans-serif; font-size
 }
 .user-pill {
     display: inline-flex; align-items: center; gap: 8px;
-    background: #0d1929; border: 1px solid #1e3a5f;
+    background: #091422; border: 1px solid #1a3560;
     border-radius: 20px; padding: 4px 12px 4px 8px;
-    font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #7ab8ff;
+    font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #6aaeff;
 }
 .user-dot {
     width: 6px; height: 6px; border-radius: 50%;
     background: #4a9eff; display: inline-block;
 }
-[data-testid="stExpander"] { background: #111318; border: 1px solid #1e2230; border-radius: 4px; }
-hr { border-color: #1e2230 !important; }
+[data-testid="stExpander"] { background: #0c1527; border: 1px solid #1a2d50; border-radius: 4px; }
+hr { border-color: #1a2d50 !important; }
 h1 { font-family: 'IBM Plex Sans', sans-serif; font-weight: 300; color: #e2e8f0; letter-spacing: -0.02em; }
 h2 { font-family: 'IBM Plex Sans', sans-serif; font-weight: 400; color: #cbd5e1; }
 h3 { font-family: 'IBM Plex Sans', sans-serif; font-weight: 400; color: #cbd5e1; }
 
 /* ── Tabs ── */
 [data-testid="stTabs"] [role="tablist"] {
-    border-bottom: 1px solid #1e2230; gap: 0;
+    border-bottom: 1px solid #1a2d50; gap: 0;
 }
 [data-testid="stTabs"] [role="tab"] {
     font-family: 'IBM Plex Mono', monospace; font-size: 12px;
@@ -209,10 +209,10 @@ h3 { font-family: 'IBM Plex Sans', sans-serif; font-weight: 400; color: #cbd5e1;
 """, unsafe_allow_html=True)
 
 CHART_THEME = {
-    "paper_bgcolor": "#0d0f14",
-    "plot_bgcolor":  "#0d0f14",
+    "paper_bgcolor": "#060c1a",
+    "plot_bgcolor":  "#060c1a",
     "font":          {"family": "IBM Plex Mono", "color": "#cbd5e1", "size": 12},
-    "gridcolor":     "#1e2230",
+    "gridcolor":     "#1a2d50",
 }
 
 TICKER_COLORS = [
@@ -296,7 +296,7 @@ def show_login():
 
     st.markdown("""
         <hr class="login-divider">
-        <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#2d3748;text-align:center;letter-spacing:0.1em;">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#1e3660;text-align:center;letter-spacing:0.1em;">
             CONFIDENTIAL · ORIK.AI · PERSONAL USE ONLY
         </div>
     </div>
@@ -703,7 +703,7 @@ def make_line_chart(company_df: pd.DataFrame, y_col: str, title: str) -> go.Figu
             x=tdf["period"], y=tdf[y_col],
             mode="lines+markers", name=ticker,
             line=dict(color=color, width=2),
-            marker=dict(size=6, color=color, line=dict(color="#0d0f14", width=1)),
+            marker=dict(size=6, color=color, line=dict(color="#060c1a", width=1)),
             hovertemplate=f"<b>{ticker}</b><br>%{{x}}<br>{title}: %{{y:.0f}}<extra></extra>",
         ))
     if show_industry_benchmark and y_col in benchmarks.columns:
@@ -723,7 +723,7 @@ def make_line_chart(company_df: pd.DataFrame, y_col: str, title: str) -> go.Figu
         font=CHART_THEME["font"],
         yaxis=dict(range=[0, 100], gridcolor=CHART_THEME["gridcolor"], tickfont=dict(size=10)),
         xaxis=dict(gridcolor=CHART_THEME["gridcolor"], tickangle=-30, tickfont=dict(size=10)),
-        legend=dict(bgcolor="#111318", bordercolor="#1e2230", borderwidth=1,
+        legend=dict(bgcolor="#0c1527", bordercolor="#1a2d50", borderwidth=1,
                     font=dict(family="IBM Plex Mono", size=10)),
         margin=dict(l=0, r=0, t=36, b=0), height=260,
     )
@@ -748,9 +748,9 @@ def make_delta_bar_chart(company_df: pd.DataFrame, delta_col: str, title: str) -
         paper_bgcolor=CHART_THEME["paper_bgcolor"], plot_bgcolor=CHART_THEME["plot_bgcolor"],
         font=CHART_THEME["font"],
         yaxis=dict(gridcolor=CHART_THEME["gridcolor"], tickfont=dict(size=10),
-                   zeroline=True, zerolinecolor="#2d3748", zerolinewidth=1),
+                   zeroline=True, zerolinecolor="#1e3660", zerolinewidth=1),
         xaxis=dict(gridcolor=CHART_THEME["gridcolor"], tickangle=-30, tickfont=dict(size=10)),
-        legend=dict(bgcolor="#111318", bordercolor="#1e2230", borderwidth=1,
+        legend=dict(bgcolor="#0c1527", bordercolor="#1a2d50", borderwidth=1,
                     font=dict(family="IBM Plex Mono", size=10)),
         barmode="group", margin=dict(l=0, r=0, t=36, b=0), height=260,
     )
@@ -838,7 +838,7 @@ with tab_themes_hedging:
                     x=matrix.columns.tolist(),
                     y=matrix.index.tolist(),
                     colorscale=[
-                        [0.0,  "#111318"],
+                        [0.0,  "#0c1527"],
                         [0.01, "#0d2a1a"],
                         [0.35, "#065f46"],
                         [0.7,  "#059669"],
@@ -906,7 +906,7 @@ with tab_themes_hedging:
                         dropped_html = "".join(f'<span class="flag-negative">− {t}</span>' for t in dropped_this_q)
                         st.markdown(
                             f'<div style="margin-bottom:10px;padding:8px 10px;'
-                            f'background:#0d0f14;border:1px solid #1e2230;border-radius:4px;">'
+                            f'background:#060c1a;border:1px solid #1a2d50;border-radius:4px;">'
                             f'<div style="font-family:\'IBM Plex Mono\',monospace;font-size:11px;'
                             f'color:#4a9eff;margin-bottom:6px;">'
                             f'{cur_period} <span style="color:#94a3b8;">vs</span> {prev_period}</div>'
@@ -980,9 +980,9 @@ with tab_themes_hedging:
                     paper_bgcolor=CHART_THEME["paper_bgcolor"], plot_bgcolor=CHART_THEME["plot_bgcolor"],
                     font=CHART_THEME["font"],
                     yaxis=dict(gridcolor=CHART_THEME["gridcolor"], tickfont=dict(size=10),
-                               zeroline=True, zerolinecolor="#2d3748"),
+                               zeroline=True, zerolinecolor="#1e3660"),
                     xaxis=dict(gridcolor=CHART_THEME["gridcolor"], tickangle=-30, tickfont=dict(size=10)),
-                    legend=dict(bgcolor="#111318", bordercolor="#1e2230", borderwidth=1,
+                    legend=dict(bgcolor="#0c1527", bordercolor="#1a2d50", borderwidth=1,
                                 font=dict(family="IBM Plex Mono", size=10)),
                     barmode="group", margin=dict(l=0, r=0, t=36, b=0), height=240,
                 )
@@ -1003,8 +1003,8 @@ with tab_themes_hedging:
                     )
                     terms_html = " ".join(f'<span class="hedge-term">{t}</span>' for t in hrow["terms"][:6])
                     st.markdown(
-                        f'<div style="margin-bottom:12px;padding:10px;background:#0d0f14;'
-                        f'border:1px solid #1e2230;border-radius:4px;">'
+                        f'<div style="margin-bottom:12px;padding:10px;background:#060c1a;'
+                        f'border:1px solid #1a2d50;border-radius:4px;">'
                         f'<div style="margin-bottom:6px;">'
                         f'<span style="font-family:\'IBM Plex Mono\',monospace;font-size:12px;'
                         f'color:#94a3b8;margin-right:8px;">{hrow["ticker"]}  {hrow["period"]}</span>'
